@@ -12,93 +12,91 @@ and open the template in the editor.
     </head>
     <body>
         <div>TODO write content</div>
-        
-        
-           <div class = "registerform">
-      <div class = "registerheader">
-        Formulário de Registo  
-      </div>
-      <div class = "registertext">
-        Preencha o formulario abaixo para se registar no Negócios em Angola. Se quiser adicionar uma empresa ou negócio ao nosso directório, o registo é obrigatório. Todos os campos do formulário são obrogatórios.  </div>
-        <center>
-        <form method="post" id="registerform" novalidate="novalidate">
-        <table width = 100%>
-          <tr>
-            <td width = 25% class = "registerformlabel">Primeiro Nome:</td>
-            <td width = 25%><input class = "registerforminput" name="fname" id="fname" type="text" tabindex = 1 /></td>
-            <td width = 25% class = "registerformlabel">Nome de utilizador:</td>
-            <td width = 25%><input class = "registerforminput" name="user" id="user" type="text" tabindex = 4 /></td>
-          </tr>
-          <tr>
-            <td class = "registerformlabel">Ultimo Nome:</td>
-            <td><input class = "registerforminput" name="lname" id="lname" type="text" tabindex = 2 /></td>
-            <td class = "registerformlabel">Password:</td>
-            <td><input class = "registerforminput" name="pass1" id="pass1" type="password" tabindex = 5 /></td>
-          </tr>
-          <tr>
-            <td class = "registerformlabel">O seu email</td>
-            <td><input class = "registerforminput" name="email" id="email" type="text" tabindex = 3 /></td>
-            <td class = "registerformlabel">Confirme a Password:</td>
-            <td><input class = "registerforminput" name="pass2" id="pass2" type="password" tabindex = 6 /></td>
-          </tr>
-          <tr>
-          <td colspan = "4">&nbsp;</td>
-          </tr>
-          <tr>
-          <td colspan = "4" align = "center"><input class = "submitbutton" type="submit" name = "submit" value="Registar" /></td>
-          </tr>
-        </table>
-        </form>
-        </center>
-      </div>
+
+
+        <div class = "registerform">
+            <div class = "registerheader">
+                Formulário de Registo  
+            </div>
+            <div class = "registertext">
+                Preencha o formulario abaixo para se registar no Negócios em Angola. Se quiser adicionar uma empresa ou negócio ao nosso directório, o registo é obrigatório. Todos os campos do formulário são obrogatórios.  </div>
+            <center>
+                <form method="post" id="registerform" novalidate="novalidate">
+                    <table width = 100%>
+                        <tr>
+                            <td width = 25% class = "registerformlabel">Primeiro Nome:</td>
+                            <td width = 25%><input class = "registerforminput" name="fname" id="fname" type="text" tabindex = 1 /></td>
+                            <td width = 25% class = "registerformlabel">Nome de utilizador:</td>
+                            <td width = 25%><input class = "registerforminput" name="user" id="user" type="text" tabindex = 4 /></td>
+                        </tr>
+                        <tr>
+                            <td class = "registerformlabel">Ultimo Nome:</td>
+                            <td><input class = "registerforminput" name="lname" id="lname" type="text" tabindex = 2 /></td>
+                            <td class = "registerformlabel">Password:</td>
+                            <td><input class = "registerforminput" name="pass1" id="pass1" type="password" tabindex = 5 /></td>
+                        </tr>
+                        <tr>
+                            <td class = "registerformlabel">O seu email</td>
+                            <td><input class = "registerforminput" name="email" id="email" type="text" tabindex = 3 /></td>
+                            <td class = "registerformlabel">Confirme a Password:</td>
+                            <td><input class = "registerforminput" name="pass2" id="pass2" type="password" tabindex = 6 /></td>
+                        </tr>
+                        <tr>
+                            <td colspan = "4">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan = "4" align = "center"><input class = "submitbutton" type="submit" name = "submit" value="Registar" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
     </div>
 
 
-        <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-         
 
-        <script>              
-          // When the browser is ready...
-  $(function() {
-  
-    // Setup form validation on the #registerform element
-    $("#registerform").validate({
-    
-        // Specify the validation rules
-        rules: {
-            fname: "required",
-            lname: "required",
-            email: {
-                required: true,
-                email: true
-            },
-            pass1: {
-                required: true,
-            },
-            pass2: {
-                required: true,
-            }
-        },
-        // Specify the validation error messages
-        messages: {
-            fname: "Please enter your first name",
-            lname: "Please enter your last name",
-            pass1: {
-                required: "Please provide a password",
-            },
-            pass2: {
-                required: "Please confirm the password",
-            },
-            email: "Please enter a valid email address",
-        },
-        
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
-  });
-            
-        </script>
-    </body>
+
+    <script>
+        // When the browser is ready...
+        $(function () {
+
+            // Setup form validation on the #registerform element
+            $("#registerform").validate({
+                // Specify the validation rules
+                rules: {
+                    fname: "required",
+                    lname: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    pass1: {
+                        required: true,
+                    },
+                    pass2: {
+                        required: true,
+                    }
+                },
+                // Specify the validation error messages
+                messages: {
+                    fname: "Please enter your first name",
+                    lname: "Please enter your last name",
+                    pass1: {
+                        required: "Please provide a password",
+                    },
+                    pass2: {
+                        required: "Please confirm the password",
+                    },
+                    email: "Please enter a valid email address",
+                },
+                submitHandler: function (form) {
+                    form.submit();
+                }
+            });
+        });
+
+    </script>
+</body>
 </html>
