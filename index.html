@@ -15,6 +15,8 @@ and open the template in the editor.
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
       
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,12 +25,12 @@ and open the template in the editor.
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <title>Pingo De Gente</title>
+        <title>Pingo de Gente</title>
         
 
         
         <style type="text/css">
-            body {font-family:Arial, Sans-Serif; }
+            body {font-family:Arial, Sans-Serif;background: url(ravenna.png); }
             
             html,body{height:100%;}
             
@@ -40,9 +42,18 @@ and open the template in the editor.
             
             .navbar-inverse {
                 background-color: #26ae90;
-                border-color: #26ae90;
+                border-color: #ffb700;
                 color: white;
                 border-radius: 0px;
+                
+                background-color: #ffb700;
+                background-image: url("http://untuck.com/wp-content/uploads/2014/11/pccy-orange-pattern-1170x450.jpg");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+                
+
+          
+                
+                
                 
             }
              /* title */
@@ -52,6 +63,7 @@ and open the template in the editor.
             
             navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
                 background-color: #126257;
+              
             }
             
             .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
@@ -60,20 +72,25 @@ and open the template in the editor.
             }
             .navbar-inverse .navbar-nav > li > a {
                 color: white;
+                font-family: 'Indie Flower', cursive;
+                font-size: 18px;
+                font-weight: bold;
+                
             }
             .navbar-inverse .navbar-nav > .active > a{
                 border-bottom: 3px solid black;
-                background-color: #126257;
+               background-color: #126257;
+               
             }
             
             
             
             .carousel,.item,.active{height:100%;}
             .carousel-inner{height:100%;}
-            .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+            .fill{width:100%;height:100%;background-position: center;background-size:cover; background-color: black;}
             
             .carousel-inner img {
-                margin: auto;
+                margin:0 auto;
               }
 
             
@@ -81,17 +98,38 @@ and open the template in the editor.
             .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; }
             .carousel .item {
                 width: 100%; /*slider width*/
-                max-height: 350px; /*slider height*/
+                max-height: 450px; /*slider height*/
+                
             }
             .carousel .item img {
-                width: 100%; /*img width*/
-                height: 100%;
-                //max-height :400px;
-                //padding-top:-150px; 
-                position: relative;
+                width: 75%; /*img width*/
+                max-width: 1200px;
+                //height: 100%;
+               /* max-height: 600px;
+                min-height: 600px;
+                top: 200px; */
+               // position: fixed;
                 //bottom: 100px;;
+                //vertical-align:middle;
+
+               // background-repeat: no-repeat;
+                //background-attachment: fixed;
+                //background-position: center;
              
             }
+            
+            .carousel-inner>.item>img {
+                margin: 0 auto;
+                height: 400px;
+            }
+            
+            #carousel-780196{
+              //  background: url(green-fibers.png);
+background-color: #00c8ff;
+background-image: url("http://www.transparenttextures.com/patterns/food.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+            }
+            
             
             /*full width container*/
             @media (max-width: 767px) {
@@ -100,13 +138,32 @@ and open the template in the editor.
                     margin-right: -20px;
                 }
             }
-            .carousel-caption{
-                background-color: rgba(0,0,0,0.8);
+           /* .carousel-caption{
+                background-color: rgba(0,0,0,0.85);
                 border-radius: 10px;
               
              
                
-            }
+            }*/
+            
+                     .carousel-caption {
+                          background-color: rgba(0,0,0,0.85);
+      max-width: 1200px;
+      
+      padding: 0 20px;
+      margin:0 auto;
+      margin-top: 200px;
+      text-align:center;
+}
+
+.carousel-indicators{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.85);
+
+    
+}
             
             .container{
                 padding-top:50px;
@@ -117,15 +174,29 @@ and open the template in the editor.
                 box-shadow:0;
                 border-radius:0;
             }
+            
+            #quemSomos, #thumb{
+                border-radius: 0px;padding-bottom: 20px;border: solid 1px #126257;
+            }
+            #quemSomos{
+                padding-bottom: 5px;
+                padding-left:5px;
+                margin-left: 5px;
+            }
+            
+            #bottom{
+        }
+            
            
+        
      
      
  
               </style>
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid" style="width:70%;">
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid" style="width:85%;">
                 
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -142,12 +213,14 @@ and open the template in the editor.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Escola <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Notícias</a></li>
-                            <li><a href="#">Estrutura</a></li>
+                            <li class="active"><a href="#">Início <span class="sr-only">(current)</span></a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="#">Galeria de Fotos</a></li>
+                            <li><a href="#">Notícias</a></li>
                             <li><a href="#">Calendário</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="contato.html">Contato</a></li>  
+                            
+                            
                         </ul>
                         
                         <ul class="nav navbar-nav navbar-right">
@@ -167,18 +240,18 @@ and open the template in the editor.
         <div class="container-fluid">
          <div class="row">
                 <div class="col-md-12" style="padding-right:0px; padding-left: 0px;"  >
-                    <div class="carousel slide" id="carousel-780196" >
+                    <div class="carousel slide" id="carousel-780196">
                         <ol class="carousel-indicators">
-                            <li data-slide-to="0" data-target="#carousel-780196">
+                            <li data-slide-to="0" data-target="#carousel-780196" class="active">
                             </li>
                             <li data-slide-to="1" data-target="#carousel-780196">
                             </li>
-                            <li data-slide-to="2" data-target="#carousel-780196" class="active">
+                            <li data-slide-to="2" data-target="#carousel-780196">
                             </li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="item">
-                                <img class="img-responsive center-block" alt="Carousel Bootstrap First" src="http://www.acigra.com.br/wp-content/uploads/2013/12/foto-hospital.jpg" />
+                                <img class="img-responsive center-block" alt="Carousel Bootstrap First" src="http://listpictures.xyz/wp-content/uploads/kids-4.jpg" />
                                 <div class="carousel-caption">
                                     <h4>
                                         First Thumbnail label
@@ -189,7 +262,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="item">
-                                <img alt="Carousel Bootstrap Second" src="http://www.saoluiz.com.br/Images/hospital/hospital_abertura.jpg" />
+                                <img alt="Carousel Bootstrap Second" src="http://wilsonchapel.webs.com/kids-playing.jpg" />
                                 <div class="carousel-caption">
                                     <h4>
                                         Second Thumbnail label
@@ -200,7 +273,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="item active">
-                                <img alt="Carousel Bootstrap Third" src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg" />
+                                <img alt="Carousel Bootstrap Third" src="http://www.blackgirldangerous.org/wp-content/uploads/2015/07/o-TALKING-TO-KIDS-ABOUT-RACE-facebook.jpg" />
                                 <div class="carousel-caption">
                                     <h4>
                                         Third Thumbnail label
@@ -210,20 +283,21 @@ and open the template in the editor.
                                     </p>
                                 </div>
                             </div>
-                        </div> <a class="left carousel-control" href="#carousel-780196" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-780196" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div> 
+                        <a class="left carousel-control" href="#carousel-780196" data-slide="prev"><span  class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-780196" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
             </div>
         </div>
         
-         <div class="container" style="background-color:background;">
+         <div class="container">
             <div class="container-fluid">
                      <div class="row">
                         <div class="col-md-12">
                                     
-                            <div class="thumbnail" style="overflow: hidden; " >
+                            <div class="thumbnail" id="quemSomos" style="overflow: hidden; padding-left: 0px;padding-right: 0px; " >
 
-                                <div class="col-md-6" style="float:left;margin-right: 40px;"><img style="width:100%; height:100%; margin:auto; position:relative;" alt="Bootstrap Thumbnail First" src="data:image/jpeg;base64,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" /></div>
+                                <div class="col-md-6" style="float:left;margin-right: 40px;"><img style="width:100%; height:100%; margin:auto; position:relative;padding-left: 0px; margin-left: 0px;" alt="Bootstrap Thumbnail First" src="http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg" /></div>
                                 <div class=""col-md-6>
                                     <div class="caption" style="margin-left: 50px;">
                                             <h3>
@@ -248,55 +322,55 @@ and open the template in the editor.
              </div> 
         </div>
 
-        <div class="container" style="background-color:background;">
+        <div class="container" >
             <div class="container-fluid">
                      <div class="row">
                              <div class="col-md-12">
                                      <div class="row">
-                                             <div class="col-md-4">
-                                                     <div class="thumbnail">
-                                                             <img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg" />
+                                             <div class="col-md-4" >
+                                                     <div class="thumbnail" id="thumb">
+                                                             <img alt="Bootstrap Thumbnail First" src="https://www.med.nyu.edu/child-adolescent-psychiatry/sites/default/files/child-adolescent-psychiatry/-_Summer_Program_for_Kids_-_03-28-13_-_small.jpg" />
                                                              <div class="caption">
                                                                      <h3>
-                                                                             Proposta Pedagógica
+                                                                             Qualidade
                                                                      </h3>
                                                                      <p>
                                                                              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                                                                      </p>
                                                                      <p>
-                                                                             <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                                                             <a class="btn btn-primary" href="sobre.html">Ler mais</a> 
                                                                      </p>
                                                              </div>
                                                      </div>
                                              </div>
                                              <div class="col-md-4">
-                                                     <div class="thumbnail">
-                                                             <img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg" />
+                                                     <div class="thumbnail" id="thumb">
+                                                             <img alt="Bootstrap Thumbnail Second" src="http://www.dumblittleman.com/wp-content/uploads/2014/04/Kids-Can-Teach.jpg" />
                                                              <div class="caption">
                                                                      <h3>
-                                                                             Normas e Regras
+                                                                             Estrutura
                                                                      </h3>
                                                                      <p>
                                                                              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                                                                      </p>
                                                                      <p>
-                                                                             <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                                                             <a class="btn btn-primary" href="sobre.html">Ler mais</a>
                                                                      </p>
                                                              </div>
                                                      </div>
                                              </div>
                                              <div class="col-md-4">
-                                                     <div class="thumbnail">
-                                                             <img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg" />
+                                                     <div class="thumbnail" id="thumb">
+                                                             <img alt="Bootstrap Thumbnail Third" src="http://www.tafrehmella.com/attachments/great_kids_home_pic-jpg.74341/" />
                                                              <div class="caption">
                                                                      <h3>
-                                                                             Thumbnail label
+                                                                             Nossa Missão
                                                                      </h3>
                                                                      <p>
                                                                              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                                                                      </p>
                                                                      <p>
-                                                                             <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+                                                                             <a class="btn btn-primary" href="sobre.html">Ler mais</a>
                                                                      </p>
                                                              </div>
                                                      </div>
@@ -307,22 +381,54 @@ and open the template in the editor.
              </div> 
         </div>
         
+       
         
         
-        <!--
-            <div class="container" style="background: wheat;" >
-                <div class="container-fluid">
-                    <h1>Endereço</h1>
-                </div>
-            </div>
+        <div class="container" id="bottom">
+            <div class="container-fluid">
+                     <div class="row">
+                             <div class="col-md-12">
+                                     <div class="row">
+                                             <div class="col-md-2">
+                                                   <div class="well well-sm" style="background-color:white;border-color: #126257;padding-left: 30px;">
+                                                       <div><h4>Fale conosco</h4></div>
+                                                        <div><a class="btn btn-primary" href="contato.html">Contato</a></div>
+                                                   </div>
+                                             </div>
+                                             <div class="col-md-8">
+                                                     <div class="well well-sm" style="background-color:white;border-color: #126257;">
+                                                           <div class="text-center">
+
+                                                                    <address style="color:black;">
+                                                                             <i class="fa fa-hospital-o"></i> <strong >Hospital</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
+                                                                    </address>
+                                                            </div>
+                                                    </div>
+                                             </div>
+                                             <div class="col-md-2">
+                                                   <div class="well well-sm" style="background-color:white;border-color: #126257; padding-left: 20px;">
+                                                       <h4 >Redes Sociais</h4>
+                                                       <div>
+                                                           <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
+                                                          <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
+                                                        </div>
+                                                            
+                                                    </div>
+                                             </div>
+                                     </div>
+                             </div>
+                     </div>
+             </div> 
+        </div>
        
     
-         <footer class="footer" style="background-color: chartreuse;">
-            <div class="container" style="text-align: center;">
-              <p class="text-muted">Place sticky footer content here.</p>
+         <footer class="footer" style="background: url(green-fibers.png); ">
+            <div class="container" style="text-align: center; padding-top:10px;color:white;">
+                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+                <p>Engenharia de Computação - UFSM</p>
             </div>
         </footer>
-      !>
+      
 
            
         

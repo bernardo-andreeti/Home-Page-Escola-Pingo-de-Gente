@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <title>Pingo De Gente</title>
+        
+
+        
+        <style type="text/css">
+            body {font-family:Arial, Sans-Serif;
+                 background: url(ravenna.png);}
+            
+            html,body{height:100%;}
+            
+            .navbar {
+                margin-bottom: 0;
+                
+            }
+                       
+            
+            .navbar-inverse {
+                background-color: #26ae90;
+                border-color: #26ae90;
+                color: white;
+                border-radius: 0px;
+                
+            }
+             /* title */
+            .navbar-inverse .navbar-brand {
+                color: white;
+            }
+            
+            navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
+                background-color: #126257;
+            }
+            
+            .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
+                background-color: #126257;
+                color: white;
+            }
+            .navbar-inverse .navbar-nav > li > a {
+                color: white;
+            }
+            .navbar-inverse .navbar-nav > .active > a{
+                border-bottom: 3px solid black;
+                background-color: #126257;
+            }
+            
+            
+            
+            .carousel,.item,.active{height:100%;}
+            .carousel-inner{height:100%;}
+            .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+            
+            .carousel-inner img {
+                margin: auto;
+              }
+            
+            
+            .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; }
+            .carousel .item {
+                width: 100%; /*slider width*/
+                max-height: 350px; /*slider height*/
+            }
+            .carousel .item img {
+                width: 100%; /*img width*/
+                height: 100%;
+                //max-height :400px;
+                //padding-top:-150px; 
+                position: relative;
+                //bottom: 100px;;
+             
+            }
+            
+            /*full width container*/
+          /*  @media (max-width: 767px) {
+                .block {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+            }*/
+            
+            @media(max-width:992px){
+                .nav>li>a {
+                padding-left: 10px;
+                padding-right:10px
+                    }
+                }
+
+            
+            .carousel-caption{
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 10px;
+    
+            }
+            
+   
+            
+            .container{
+                padding-top:50px;
+            }
+            
+            .row .thumbnail {
+                border:0;
+                box-shadow:0;
+                border-radius:0;
+            }
+           
+            
+             .header {
+                color: #36A0FF;
+                font-size: 27px;
+                padding: 10px;
+            }
+
+            .bigicon {
+                font-size: 35px;
+                color: #36A0FF;
+            }
+            
+            .img-circle{
+                 width: 200px;
+                 height: 200px;        
+            }
+     
+     
+ 
+              </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" style="width:85%;">
+                
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Hospital</a></li>
+                            <li class="active"><a href="#">Sobre<span class="sr-only">(current)</span></a></li>            
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="rh.html">RH</a></li> 
+                        </ul>
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                           <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="O que você procura?">
+                            </div>
+                            <button type="submit" class="btn btn-default">Pesquisar</button>
+                        </form>
+ 
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+        </div>  
+        </nav>
+        
+
+        
+        <div class="container-fluid" style="width:80%; padding-top:15px;" >
+            <div class="row">
+		<div class="col-md-12">
+                    <div class="thumbnail" style="border-radius: 20px;padding-bottom: 20px;border: solid 1px #126257;">
+                         <fieldset style="text-decoration: #126257; font-family: cursive; color: #126257; padding-left: 15px;">
+                            <h2 style="font-size: 35px;" >Sobre a empresa...</h2>
+                                <h3>Quem somos? </h3>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                
+                     
+                                <h3>História </h3>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                   
+                
+                        </fieldset>
+                    </div>
+                 </div>
+            </div>
+    </div>
+        
+        
+        <div class="container-fluid" style="width:80%;" >
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+						<img style="border-radius: 50px;" alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg" />
+						<div class="caption">
+							<h3>
+								MISSÃO
+							</h3>
+							<p>"Cuidar de vidas" afirmando nosso compromisso com a qualidade médico-assistencial e a segurança do paciente.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+						<img style="border-radius: 50px;" alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg" />
+						<div class="caption">
+							<h3>
+								VISÃO
+							</h3>
+							<p>Ser um hospital reconhecido pela excelência na prática médico- assistencial e pela geração do conhecimento e da inovação, integrado por uma equipe que trabalha com alto desempenho e humanismo.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+						<img style="border-radius: 50px;" alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg" />
+						<div class="caption">
+							<h3>
+								VALORES
+							</h3>
+							<ol>
+                                                                <li>Compromisso com a sociedade, com a perenidade da instituição e com o meio ambiente;</li>
+                                                                <li>Cuidado: atender e assistir o ser humano como um todo físico, psíquico, social e espiritual;</li>
+                     
+                                                                <li>Ética, respeito e transparência em todas as relações que estabelecemos;</li>
+                                                              
+                                                                <li>Pertencimento: sentir-se bem em fazer parte do Hospital Moinhos de Vento.</li>
+                                                        </ol>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+        
+         <div class="container-fluid" style="width:80%; padding-top:15px;" >
+            <div class="row">
+		<div class="col-md-12">
+                    <div class="thumbnail" style="border-radius: 20px;padding-bottom: 20px;border: solid 1px #126257;">
+                         <fieldset style="text-decoration: #126257; font-family: cursive; color: #126257; padding-left: 15px;">
+                            <h2 style="font-size: 35px;" >Estrutura</h2>
+                            <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
+                                <h3> </h3>
+                                
+                                <div class="row" style="text-align:center;">
+                                        <div class="col-md-4">
+                                            <figure>
+                                               
+                                                <img border="0" alt="Bootstrap Image Preview" src="http://www.fagerhult.com/Global/References_images/T-Hospital/fagerhult_t-hospital_3.jpg?epslanguage=en" class="img-circle" />
+                                                
+                                                <figcaption>Centro cirúrgico</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <figure>
+                                                <img alt="Bootstrap Image Preview" src="http://hospitalauxiliadora.com.br/wp-content/uploads/2015/03/hospital.jpg" class="img-circle" />
+                                                <figcaption>UTI</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <figure>
+                                                <img alt="Bootstrap Image Preview" src="https://www.fraunhofer.de/content/dam/zv/en/Research%20Topics/Health/hospital-engineering-laboratory/ISST13_HospitalEngineering%2003.jpg" class="img-circle" />
+                                                <figcaption>Quartos coletivos</figcaption>
+                                            </figure>
+                                        </div>
+                                </div>
+                                
+                                
+                                
+                        </fieldset>
+                    </div>
+                 </div>
+            </div>
+    </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+          <footer class="footer" style="background: url(green-fibers.png); ">
+            <div class="container" style="text-align: center; padding-top:10px;color:white;">
+                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+                <p>Engenharia de Computação - UFSM</p>
+            </div>
+        </footer>
+        
+        
+   
+           
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

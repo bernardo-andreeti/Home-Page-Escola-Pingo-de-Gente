@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+       
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <title>Pingo De Gente</title>
+        
+        
+        
+        
+
+        
+        <style type="text/css">
+            body {font-family:Arial, Sans-Serif; }
+            
+            html,body{height:100%;}
+            
+            .navbar {
+                margin-bottom: 0;
+                
+            }
+                       
+            
+            .navbar-inverse {
+                background-color: #26ae90;
+                border-color: #26ae90;
+                color: white;
+                border-radius: 0px;
+                
+            }
+             /* title */
+            .navbar-inverse .navbar-brand {
+                color: white;
+            }
+            
+            navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
+                background-color: #126257;
+            }
+            
+            .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
+                background-color: #126257;
+                color: white;
+            }
+            .navbar-inverse .navbar-nav > li > a {
+                color: white;
+            }
+            .navbar-inverse .navbar-nav > .active > a{
+                border-bottom: 3px solid black;
+                background-color: #126257;
+            }
+            
+            
+            
+            .carousel,.item,.active{height:100%;}
+            .carousel-inner{height:100%;}
+            .fill{width:100%;height:100%;background-position:center;background-size:cover;}
+            
+            .carousel-inner img {
+                margin: auto;
+              }
+            
+            
+            .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; }
+            .carousel .item {
+                width: 100%; /*slider width*/
+                max-height: 350px; /*slider height*/
+            }
+            .carousel .item img {
+                width: 100%; /*img width*/
+                height: 100%;
+                //max-height :400px;
+                //padding-top:-150px; 
+                position: relative;
+                //bottom: 100px;;
+             
+            }
+            
+            /*full width container*/
+            @media (max-width: 767px) {
+                .block {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+            }
+            
+            @media(max-width:992px){
+                .nav>li>a {
+                padding-left: 10px;
+                padding-right:10px
+                    }
+                }
+            
+            .carousel-caption{
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 10px;
+              
+             
+               
+            }
+            
+            .container{
+                padding-top:50px;
+            }
+            
+            .row .thumbnail {
+                border:0;
+                box-shadow:0;
+                border-radius:0;
+            }
+           
+            
+             .header {
+                color: #36A0FF;
+                font-size: 27px;
+                padding: 10px;
+            }
+
+            .bigicon {
+                font-size: 35px;
+                color: #36A0FF;
+            }
+     
+     
+ 
+              </style>
+              
+              
+    </head>
+    <body style="background: url(symphony.png);">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" style="width:85%;">
+                
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Hospital</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>               
+                            <li class="active"><a href="#">Contato<span class="sr-only">(current)</span></a></li>
+                            <li><a href="rh.html">RH</a></li> 
+                        </ul>
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                           <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="O que você procura?">
+                            </div>
+                            <button type="submit"  value="submit"  class="btn btn-default">Pesquisar</button>
+                        </form>
+ 
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+        </div>  
+        </nav>
+        
+        <div class="container-fluid" style="width:40%; padding-top:15px;">
+               
+                    
+                        <div class="well well-sm" style="background-color:white;border-color: #126257;">
+                            <div class="text-center">
+
+                                    <address style="color:black;">
+                                             <strong >Hospital</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    </address>
+                            </div>
+                        </div>
+                    
+             
+        </div>
+        
+        
+       <div class="container-fluid" style="width:70%;">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <div class="well well-sm" style="background-color:white; border-color: #126257;">
+                        <form id="contatoForm" name="contatoForm" class="form-horizontal" method="post" action="">
+                            <fieldset>
+                                <legend class="text-center header" style="color:black;" >Fale conosco</legend>
+
+                                <div class="form-group" >
+                                    <span class="col-md-1 col-md-offset-2 text-center" ><i style="color:#126257;" class="glyphicon glyphicon-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input  id="name" name="nome" type="text" placeholder="Nome" class="form-control">
+                                    </div>
+                                </div>
+                        
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i style="color:#126257;" class="glyphicon glyphicon-envelope bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i style="color:#126257;" class="glyphicon glyphicon-comment bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui." rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" id="enviaContato" style="background-color:#126257;" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+          <footer class="footer" style="background: url(green-fibers.png); ">
+            <div class="container" style="text-align: center; padding-top:10px;color:white;">
+                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+                <p>Engenharia de Computação - UFSM</p>
+            </div>
+        </footer>
+        
+        <!--
+            <div class="container" style="background: wheat;" >
+                <div class="container-fluid">
+                    <h1>Endereço</h1>
+                </div>
+            </div>
+       
+    
+         <footer class="footer" style="background-color: chartreuse;">
+            <div class="container" style="text-align: center;">
+              <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </footer>
+      !>
+           
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+        
+        <!-- <script src="js/jquery-1.11.3.min.js"></script> Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        
+       <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+        <script>              
+             $(function() {
+               $("#contatoForm").validate({
+                  rules:{
+                      nome: "required",
+                      email:{
+                          required:true,
+                          email:true
+                      },
+                      mensagem:{
+                          required:true,
+                          minlength: 20           
+                      }
+                    },
+                    messages:{
+                        nome:"Digite seu nome completo!",      
+                        email: "Digite um email valido",
+                        mensagem:{
+                            required: "Digite sua mensagem!",
+                            minlength: "Descreva melhor sua mensagem!"
+                        }
+                  },
+                  submitHandler: function(form) {
+                    window.alert("Mensagem enviada!");
+                }
+             
+               }); 
+            });
+            
+            
+            
+        </script>
+      
+        
+         
+       
+        
+       
+          
+
+    </body>
+</html>
