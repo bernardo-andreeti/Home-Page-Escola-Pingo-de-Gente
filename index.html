@@ -31,20 +31,46 @@ and open the template in the editor.
 
         html,body{height:100%;}
 
+
+        #cabecalho-pag {
+            background: #FFB84D url(http://assets.tumblr.com/images/default_header/optica_pattern_09_focused_v3.png?_v=abe6f565397f54e880c2b76e6fc2022e);
+            background-size: 3000px 1055px;
+            padding: 0px;
+
+        }
+        .bord-bot-yellow{
+            border-bottom: 2px solid #ff6600;
+        }
+        .bord-top-yellow{
+            border-top: 2px solid #3366FF;
+        }.fnt-cabecalho{
+            font-size: 40px;
+            font-family: 'Indie Flower', cursive;
+            color: #3366FF;
+            text-shadow: 0px 0px 3px black;
+        }
+        .logo-cabecalho{
+            height: 90px;
+            background: #EFB81D;
+            padding: 4px;
+            margin-top: 10px;
+        }
+
         .navbar {
             margin-bottom: 0;
 
         }
 
         .navbar-inverse {
-            background-color: #26ae90;
-            border-color: #ffb700;
+            // background-color: #26ae90;
+            border:none;
             color: white;
             border-radius: 0px;
 
-            background-color: #ffb700;
-            background-image: url(img/pccy-orange-pattern-1170x450.jpg);
+            background-color: #ff6600;
+            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
             /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
         }
         /* title */
         .navbar-inverse .navbar-brand {
@@ -69,7 +95,8 @@ and open the template in the editor.
         }
         .navbar-inverse .navbar-nav > .active > a{
             border-bottom: 3px solid black;
-            background-color: #126257;
+            background-color: #3366FF;
+            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");;
 
         }
 
@@ -112,7 +139,7 @@ and open the template in the editor.
         }
 
         #carousel-780196{
-            background-color: #00c8ff;
+            background-color: #3366FF;
             background-image: url(img/food.png);
         }
 
@@ -127,9 +154,6 @@ and open the template in the editor.
         /* .carousel-caption{
              background-color: rgba(0,0,0,0.85);
              border-radius: 10px;
-           
-          
-            
          }*/
 
         .carousel-caption {
@@ -152,6 +176,12 @@ and open the template in the editor.
         .container{
             padding-top:50px;
         }
+        
+        .jumbotron{
+            background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
+            
+            margin-top:20px;
+        }
 
         .row .thumbnail {
             border:0;
@@ -170,9 +200,77 @@ and open the template in the editor.
 
         #bottom{
         }
+
+        .footer{
+            background-color: #000099;
+            background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
+            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
+
+
+
+
+        .Flexible-container-maps {
+            position: relative;
+            padding-bottom: 38.25%;
+            padding-top: 25px;
+            height: 0;
+            overflow: hidden;
+
+        }
+        
+        .Flexible-container-video {
+            position: relative;
+            padding-bottom: 62.25%;
+            padding-top: 25px;
+            height: 0;
+            overflow: hidden;
+
+        }
+
+        .Flexible-container-maps iframe,   
+        .Flexible-container-maps object,  
+        .Flexible-container-maps embed, 
+        .Flexible-container-video iframe,   
+        .Flexible-container-video object,  
+        .Flexible-container-video embed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-right: 20px;
+
+        }
+
+        .endereco_contato{
+
+            font-size: 13px;
+            text-align: center;
+
+
+
+
+        }
+
+
+
     </style>
 </head>
 <body>
+    <header id="cabecalho-pag" class="bord-top-yellow bord-bot-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1 class="fnt-cabecalho"><strong>Escola Infantil Pingo de Gente</strong></h1>
+                </div>
+                <div class="col-xs-6 hidden-xs text-right" >
+                    <img class="img-circle logo-cabecalho"
+                         src="img/logo-oportunidades.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </header>
     <nav class="navbar navbar-inverse ">
         <div class="container-fluid" style="width:85%;">
 
@@ -267,38 +365,26 @@ and open the template in the editor.
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="thumbnail" id="quemSomos" style="overflow: hidden; padding-left: 0px;padding-right: 0px; " >
-
-                        <div class="col-md-6" style="float:left;margin-right: 40px;"><img style="width:100%; height:100%; margin:auto; position:relative;padding-left: 0px; margin-left: 0px;" alt="Bootstrap Thumbnail First" src="http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg" /></div>
-                        <div class=""col-md-6>
-                            <div class="caption" style="margin-left: 50px;">
-                                <h3>
-                                    Quem somos?
-                                </h3>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-
-                </div> 
-            </div>
-        </div> 
+    
+    
+    <div class="container-fluid" style="width:80%;">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h2>
+					Quem somos?
+				</h2>
+				<p>
+					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
     </div>
+
 
     <div class="container" >
         <div class="container-fluid">
@@ -361,46 +447,69 @@ and open the template in the editor.
 
 
 
+    <div style="background-color: white;">
+        <div class="container" id="bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="well well-sm" style="background-color:white;border-color: #126257;padding-left: 30px;min-height: 300px;">
+                                    <fieldset>
+                                        <legend class="text-center header" style="color:black;" >Vídeo Institucional</legend>
+                                    </fieldset>
+                                    <div class="Flexible-container-video">
+                                        <!-- Copy & Pasted from YouTube -->
+                                        <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                    </div>
 
-    <div class="container" id="bottom">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="well well-sm" style="background-color:white;border-color: #126257;padding-left: 30px;">
-                                <div><h4>Fale conosco</h4></div>
-                                <div><a class="btn btn-primary" href="contato.html">Contato</a></div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="well well-sm" style="background-color:white;border-color: #126257;">
-                                <div class="text-center">
 
-                                    <address style="color:black;">
-                                        <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
-                                    </address>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="well well-sm" style="background-color:white;border-color: #126257; padding-left: 20px;">
-                                <h4 >Redes Sociais</h4>
-                                <div>
-                                    <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
-                                    <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
-                                </div>
+                            <div class="col-md-6">
+                                <div class="well well-sm" style="background-color:white;border-color: #126257;">
+                                    <fieldset>
+                                        <legend class="text-center header" style="color:black;" >Onde Estamos?</legend>
+                                        <div style="float:left;margin-right: 40px;">
+                                            <div class="text-center"  >
 
+                                                <address class="endereco_contato">
+                                                    <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
+                                                </address>
+                                                <div><a class="btn btn-primary" href="contato.html">Entre em contato</a></div>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <div class="Flexible-container-maps">
+
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1767.3715836663316!2d-52.27088855381342!3d-27.632469972853983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sch!4v1443231427794" width="500" height="400" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="well well-sm" style="background-color:white;border-color: #126257; padding-left: 20px;">
+                                    <h4 >Redes Sociais</h4>
+                                    <div>
+                                        <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
+                                        <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
+        </div>
     </div>
 
 
-    <footer class="footer" style="background: url(img/green-fibers.png); ">
+    <footer class="footer">
         <div class="container" style="text-align: center; padding-top:10px;color:white;">
             <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
             <p>Engenharia de Computação - UFSM</p>

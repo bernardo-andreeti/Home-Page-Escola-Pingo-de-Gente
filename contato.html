@@ -37,7 +37,7 @@ and open the template in the editor.
         }
         .navbar-inverse {
             background-color: #26ae90;
-            border-color: #ffb700;
+            border:none;
             color: white;
             border-radius: 0px;
 
@@ -131,8 +131,56 @@ and open the template in the editor.
 
         .bigicon {
             font-size: 35px;
+
             color: #36A0FF;
         }
+
+        .endereco_contato{
+
+            font-size: 15px;
+            text-align: center;
+
+
+
+
+        }
+
+        .glyphicon{
+            color: #3366FF;
+
+
+        }
+        .btn {
+            background-color:  #3366FF;
+            border-color: #3366FF;
+            color:white;
+        }
+        .header{
+            color: black;
+            font-family: 'Indie Flower', cursive;
+            font-size: 28px;
+        }
+
+
+        .Flexible-container {
+            position: relative;
+            padding-bottom: 36.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+
+        }
+
+        .Flexible-container iframe,   
+        .Flexible-container object,  
+        .Flexible-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 
 
@@ -180,139 +228,156 @@ and open the template in the editor.
         </div>  
     </nav>
 
-    <div class="container-fluid" style="width:40%; padding-top:15px;">
+    <div class="container-fluid" style="width:55%;  padding-top:15px;">
 
 
         <div class="well well-sm" style="background-color:white;border-color: #126257;">
-            <div class="text-center">
+            <fieldset>
+                <legend class="text-center header" style="color:black;" >Endereço e Contato</legend>
+                <div style="float:left;margin-right: 40px;">
+                    <div class="text-center"  >
 
-                <address style="color:black;">
-                    <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
-                </address>
-            </div>
+                        <address class="endereco_contato">
+                            <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
+                        </address>
+                    </div>
+                </div>
+                <div>
+                    <div class="Flexible-container">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1767.3715836663316!2d-52.27088855381342!3d-27.632469972853983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sch!4v1443231427794" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+            </fieldset>
         </div>
-    </div>
 
-    <div class="container-fluid" style="width:70%;">
-        <div class="row">
-            <div class="col-md-12"> 
-                <div class="well well-sm" style="background-color:white; border-color: #126257;">
-                    <form id="contatoForm" name="contatoForm" class="form-horizontal" method="post" action="">
-                        <fieldset>
-                            <legend class="text-center header" style="color:black;" >Fale conosco</legend>
+        <div class="container-fluid" style="width:80%;">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <div class="well well-sm" style="background-color:white; border-color: #126257;">
+                        <form id="contatoForm" name="contatoForm" class="form-horizontal" method="post" action="">
+                            <fieldset>
+                                <legend class="text-center header">Fale conosco</legend>
 
-                            <div class="form-group" >
-                                <span class="col-md-1 col-md-offset-2 text-center" ><i style="color:#126257;" class="glyphicon glyphicon-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input  id="name" name="nome" type="text" placeholder="Nome" class="form-control">
+                                <div class="form-group" >
+                                    <span class="col-md-1 col-md-offset-2 text-center" ><i class="glyphicon glyphicon-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input  id="name" name="nome" type="text" placeholder="Nome" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
 
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i style="color:#126257;" class="glyphicon glyphicon-envelope bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i  class="glyphicon glyphicon-envelope bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i style="color:#126257;" class="glyphicon glyphicon-comment bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui." rows="7"></textarea>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i  class="glyphicon glyphicon-comment bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui." rows="7"></textarea>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" id="enviaContato" style="background-color:#126257;" class="btn btn-primary btn-lg">Enviar</button>
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" id="enviaContato" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </fieldset>
-                    </form>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-    <footer class="footer" style="background: url(img/green-fibers.png); ">
-        <div class="container" style="text-align: center; padding-top:10px;color:white;">
-            <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
-            <p>Engenharia de Computação - UFSM</p>
         </div>
-    </footer>
 
-    <!--
-        <div class="container" style="background: wheat;" >
-            <div class="container-fluid">
-                <h1>Endereço</h1>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <footer class="footer" style="background: url(img/green-fibers.png); ">
+            <div class="container" style="text-align: center; padding-top:10px;color:white;">
+                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+                <p>Engenharia de Computação - UFSM</p>
             </div>
-        </div>
-   
+        </footer>
 
-     <footer class="footer" style="background-color: chartreuse;">
-        <div class="container" style="text-align: center;">
-          <p class="text-muted">Place sticky footer content here.</p>
-        </div>
-    </footer>
-  !>
-       
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+        <!--
+            <div class="container" style="background: wheat;" >
+                <div class="container-fluid">
+                    <h1>Endereço</h1>
+                </div>
+            </div>
+        
+        
+         <footer class="footer" style="background-color: chartreuse;">
+            <div class="container" style="text-align: center;">
+              <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </footer>
+        !>
+           
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 
-    <!-- <script src="js/jquery-1.11.3.min.js"></script> Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/jquery-1.11.3.min.js"></script> Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script>
-        $(function () {
-            $("#contatoForm").validate({
-                rules: {
-                    nome: "required",
-                    email: {
-                        required: true,
-                        email: true
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script>
+
+            $(function () {
+                $("#contatoForm").validate({
+                    rules: {
+                        nome: "required",
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        mensagem: {
+                            required: true,
+                            minlength: 20
+                        }
                     },
-                    mensagem: {
-                        required: true,
-                        minlength: 20
+                    messages: {
+                        nome: "Digite seu nome completo!",
+                        email: "Digite um email valido",
+                        mensagem: {
+                            required: "Digite sua mensagem!",
+                            minlength: "Descreva melhor sua mensagem!"
+                        }
+                    },
+                    submitHandler: function (form) {
+                        window.alert("Mensagem enviada!");
                     }
-                },
-                messages: {
-                    nome: "Digite seu nome completo!",
-                    email: "Digite um email valido",
-                    mensagem: {
-                        required: "Digite sua mensagem!",
-                        minlength: "Descreva melhor sua mensagem!"
-                    }
-                },
-                submitHandler: function (form) {
-                    window.alert("Mensagem enviada!");
-                }
 
+                });
             });
-        });
 
-    </script>
+        </script>
 
 </body>
 </html>
