@@ -117,7 +117,7 @@ and open the template in the editor.
 
         }
         .carousel .item img {
-            width: 75%; /*img width*/
+            width: 70%; /*img width*/
             max-width: 1200px;
             //height: 100%;
             /* max-height: 600px;
@@ -179,8 +179,8 @@ and open the template in the editor.
         
         .jumbotron{
             background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
-            
-            margin-top:20px;
+            height: 400px;
+            margin-top:10px;
         }
 
         .row .thumbnail {
@@ -190,7 +190,7 @@ and open the template in the editor.
         }
 
         #quemSomos, #thumb{
-            border-radius: 0px;padding-bottom: 20px;border: solid 1px #126257;
+           /* border-radius: 0px;padding-bottom: 20px;border: solid 1px #126257;*/
         }
         #quemSomos{
             padding-bottom: 5px;
@@ -199,6 +199,14 @@ and open the template in the editor.
         }
 
         #bottom{
+           
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: #F9F9F9;
+            border-top: 1px solid rgba(20, 20, 20, 0.8);
+            border-bottom: 1px solid rgba(20, 20, 20, 0.8);
         }
 
         .footer{
@@ -366,23 +374,24 @@ and open the template in the editor.
         </div>
     </div>
     
-    
-    <div class="container-fluid" style="width:80%;">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="jumbotron">
-				<h2>
-					Quem somos?
-				</h2>
-				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-		</div>
-	</div>
+    <div class="container" >
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-md-12">
+        			<div class="jumbotron">
+        				<h2>
+        					Quem somos?
+        				</h2>
+        				<p>
+        					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        				</p>
+        				<p>
+        					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+        				</p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
     </div>
 
 
@@ -447,8 +456,8 @@ and open the template in the editor.
 
 
 
-    <div style="background-color: white;">
-        <div class="container" id="bottom">
+   <div id="bottom">
+        <div class="container">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -506,7 +515,8 @@ and open the template in the editor.
                 </div>
             </div> 
         </div>
-    </div>
+    </div>  
+   
 
 
     <footer class="footer">
