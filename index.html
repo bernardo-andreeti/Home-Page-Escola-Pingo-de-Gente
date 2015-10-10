@@ -17,6 +17,10 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href="css/animate.css" rel="stylesheet">
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,11 +46,11 @@ and open the template in the editor.
 
 
         .tb-header {
-            background: #303030;
+           
             height: 60px;
             top: 0px;
             left: 0px;
-            background-color: #ff6600;
+            background-color: #3366FF;
             width: 100%;
         }
 
@@ -93,7 +97,7 @@ and open the template in the editor.
             color: white;
             border-radius: 0px;
 
-            background-color: #ff6600;
+            background-color: #33CCFF;
             background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
             /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
@@ -105,12 +109,18 @@ and open the template in the editor.
 
         navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
             background-color: #126257;
-
+            
         }
 
         .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-            background-color: #126257;
+            background-color: #3366FF;
+            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
             color: white;
+             transition: background-color 0.7s;
+             transition-timing-function: linear;
+             -webkit-transition: background-color 0.7s;
+             -webkit-transition-timing-function: linear;
+             
         }
         .navbar-inverse .navbar-nav > li > a {
             color: white;
@@ -217,7 +227,7 @@ and open the template in the editor.
 
         .jumbotron{
             background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
-            height: 400px;
+            height: 350px;
             margin-top:10px;
         }
 
@@ -297,6 +307,61 @@ and open the template in the editor.
         }
 
 
+        
+        .carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.red-cell {
+   background-color: #26ae90; /* Or some other color */
+}
 
 
 
@@ -360,7 +425,7 @@ and open the template in the editor.
 
     <div class="row">
         <div class="col-md-12" style="padding-right:0px; padding-left: 0px;"  >
-            <div class="carousel slide" id="carousel">
+            <div class="carousel slide carousel-fade" id="carousel">
                 <div class="container-fluid">
                     <div class="carousel-inner">
                     <ol class="carousel-indicators" style="max-width: 1000px;">
@@ -568,11 +633,28 @@ and open the template in the editor.
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script>
+       $(document).ready(function() {
+           var i=0;
+           var colors = ["#fe9314", "#FF75FF", "#66FF66", "#FFFF33"];
+           
+           $("#carousel").css("backgroundColor", colors[0]);
+         
+  $('.carousel-control').click( function() {
+     // window.alert("oi");
+     
+     i++;
+     i = (i == colors.length) ? 0 : i;
+   $("#carousel").stop().animate({backgroundColor: colors[i]}, 3000);
+   
+    
+  } );
+} );
+    </script>
 
 </body>
 </html>
