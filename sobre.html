@@ -17,6 +17,7 @@ and open the template in the editor.
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+     <link href="css/myStyle.css" rel="stylesheet">
 
 
 
@@ -29,138 +30,19 @@ and open the template in the editor.
     <title>Pingo De Gente</title>
 
 
-
-    <style type="text/css">
-        body {font-family:Arial, Sans-Serif;
-              background: url(img/ravenna.png);}
-
-        html,body{height:100%;}
-
-        .navbar {
-            margin-bottom: 0;
-
-        }
-
-
-        .navbar-inverse {
-            background-color: #26ae90;
-            border:none;
-            color: white;
-            border-radius: 0px;
-
-            background-color: #ffb700;
-            background-image: url(img/pccy-orange-pattern-1170x450.jpg);
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-        }
-        /* title */
-        .navbar-inverse .navbar-brand {
-            color: white;
-        }
-
-        navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
-            background-color: #126257;
-
-        }
-
-        .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-            background-color: #126257;
-            color: white;
-        }
-        .navbar-inverse .navbar-nav > li > a {
-            color: white;
-            font-family: 'Indie Flower', cursive;
-            font-size: 18px;
-            font-weight: bold;
-
-        }
-        .navbar-inverse .navbar-nav > .active > a{
-            border-bottom: 3px solid black;
-            background-color: #126257;
-
-        }
-
-
-
-        .carousel,.item,.active{height:100%;}
-        .carousel-inner{height:100%;}
-        .fill{width:100%;height:100%;background-position:center;background-size:cover;}
-
-        .carousel-inner img {
-            margin: auto;
-        }
-
-
-        .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; }
-        .carousel .item {
-            width: 100%; /*slider width*/
-            max-height: 350px; /*slider height*/
-        }
-        .carousel .item img {
-            width: 100%; /*img width*/
-            height: 100%;
-            //max-height :400px;
-            //padding-top:-150px; 
-            position: relative;
-            //bottom: 100px;;
-
-        }
-
-        /*full width container*/
-        /*  @media (max-width: 767px) {
-              .block {
-                  margin-left: -20px;
-                  margin-right: -20px;
-              }
-          }*/
-
-        @media(max-width:992px){
-            .nav>li>a {
-                padding-left: 10px;
-                padding-right:10px
-            }
-        }
-
-
-        .carousel-caption{
-            background-color: rgba(0,0,0,0.8);
-            border-radius: 10px;
-
-        }
-
-
-
-        .container{
-            padding-top:50px;
-        }
-
-        .row .thumbnail {
-            border:0;
-            box-shadow:0;
-            border-radius:0;
-        }
-
-
-        .header {
-            color: #36A0FF;
-            font-size: 27px;
-            padding: 10px;
-        }
-
-        .bigicon {
-            font-size: 35px;
-            color: #36A0FF;
-        }
-
-        .img-circle{
-            width: 200px;
-            height: 200px;        
-        }
-
-
-
-    </style>
 </head>
 <body>
+    <header class="tb-header">
+
+        <h1 class="tb-logo"><a href="#" >Escola Infantil Pingo de Gente</a></h1>
+
+
+        <ul class="tb-social">
+
+            <li><a href="#" title="Link para nosso Facebook">Facebook</a></li>
+        </ul>
+    </header>
+    
     <nav class="navbar navbar-inverse ">
         <div class="container-fluid" style="width:85%;">
 
@@ -173,7 +55,6 @@ and open the template in the editor.
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#">Logo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -205,11 +86,11 @@ and open the template in the editor.
 
 
 
-    <div class="container-fluid" style="width:80%; padding-top:15px;" >
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="thumbnail" style="border-radius: 20px;padding-bottom: 20px;border: solid 1px #126257;">
-                    <fieldset style="text-decoration: #126257; font-family: cursive; color: #126257; padding-left: 15px;">
+                <div class="thumbnail" >
+                    <fieldset>
                         <h2 style="font-size: 35px;" >Sobre a empresa...</h2>
                         <h3>Quem somos? </h3>
                         <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
@@ -232,12 +113,12 @@ and open the template in the editor.
     </div>
 
 
-    <div class="container-fluid" style="width:80%;" >
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+                        <div class="thumbnail">
                             <img style="border-radius: 50px;" alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg" />
                             <div class="caption">
                                 <h3>
@@ -249,7 +130,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+                        <div class="thumbnail">
                             <img style="border-radius: 50px;" alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg" />
                             <div class="caption">
                                 <h3>
@@ -261,7 +142,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="thumbnail" style="border-radius: 50px;padding-bottom: 20px;border: solid 1px #126257;">
+                        <div class="thumbnail">
                             <img style="border-radius: 50px;" alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg" />
                             <div class="caption">
                                 <h3>
@@ -284,11 +165,11 @@ and open the template in the editor.
         </div>
     </div>
 
-    <div class="container-fluid" style="width:80%; padding-top:15px;" >
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="thumbnail" style="border-radius: 20px;padding-bottom: 20px;border: solid 1px #126257;">
-                    <fieldset style="text-decoration: #126257; font-family: cursive; color: #126257; padding-left: 15px;">
+                <div class="thumbnail">
+                    <fieldset>
                         <h2 style="font-size: 35px;" >Estrutura</h2>
                         <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
                         <p>blablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablablablablablablalbalbalbalbalbablablablabla</p>
@@ -327,16 +208,9 @@ and open the template in the editor.
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 
-    <footer class="footer" style="background: url(img/green-fibers.png); ">
+     <footer class="footer">
         <div class="container" style="text-align: center; padding-top:10px;color:white;">
             <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
             <p>Engenharia de Computação - UFSM</p>

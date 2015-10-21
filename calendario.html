@@ -16,6 +16,7 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href="css/myStyle.css" rel="stylesheet">
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,84 +28,7 @@ and open the template in the editor.
         <title>Calendário</title>
 
         <style type="text/css">
-            body {font-family:Arial, Sans-Serif;background: url(img/ravenna.png); }
-
-            html,body{height:100%;}
-
-            .navbar {
-                margin-bottom: 0;
-
-            }
-
-            .navbar-inverse {
-                margin-bottom: 25px;
-                background-color: #26ae90;
-                border:none;
-                color: white;
-                border-radius: 0px;
-
-                background-color: #ffb700;
-                background-image: url(img/pccy-orange-pattern-1170x450.jpg);
-                /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-            }
-            /* title */
-            .navbar-inverse .navbar-brand {
-                color: white;
-            }
-
-            navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
-                background-color: #126257;
-
-            }
-
-            .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-                background-color: #126257;
-                color: white;
-            }
-            .navbar-inverse .navbar-nav > li > a {
-                color: white;
-                font-family: 'Indie Flower', cursive;
-                font-size: 18px;
-                font-weight: bold;
-
-            }
-            .navbar-inverse .navbar-nav > .active > a{
-                border-bottom: 3px solid black;
-                background-color: #126257;
-
-            }
-
-
-            /*full width container*/
-            @media (max-width: 767px) {
-                .block {
-                    margin-left: -20px;
-                    margin-right: -20px;
-                }
-            }
-            /* .carousel-caption{
-                 background-color: rgba(0,0,0,0.85);
-                 border-radius: 10px;
-               
-              
-                
-             }*/
-
-            .container{
-                padding-top:50px;
-            }
-
-            .row .thumbnail {
-                border:0;
-                box-shadow:0;
-                border-radius:0;
-            }
-
-            .container-fluid{
-                width:80%;
-                
-            }
-            
+           
             .well-sm{
                 background-color:white; border-color: #126257; 
             }
@@ -117,6 +41,18 @@ and open the template in the editor.
         </style>
     </head>
     <body>
+        
+        <header class="tb-header">
+
+        <h1 class="tb-logo"><a href="#" >Escola Infantil Pingo de Gente</a></h1>
+
+
+        <ul class="tb-social">
+
+            <li><a href="#" title="Link para nosso Facebook">Facebook</a></li>
+        </ul>
+    </header>
+        
         <nav class="navbar navbar-inverse ">
             <div class="container-fluid" style="width:85%;">
 
@@ -129,7 +65,6 @@ and open the template in the editor.
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#">Logo</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -289,12 +224,12 @@ and open the template in the editor.
             </div>
         </div>
 
-        <footer class="footer" style="background: url(img/green-fibers.png); ">
-            <div class="container" style="text-align: center; padding-top:10px;color:white;">
-                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
-                <p>Engenharia de Computação - UFSM</p>
-            </div>
-        </footer>
+         <footer class="footer">
+        <div class="container">
+            <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+            <p>Engenharia de Computação - UFSM</p>
+        </div>
+    </footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

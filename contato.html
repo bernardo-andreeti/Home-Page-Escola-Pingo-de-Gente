@@ -17,6 +17,7 @@ and open the template in the editor.
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="css/myStyle.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,165 +28,23 @@ and open the template in the editor.
     <![endif]-->
     <title>Entre em Contato!</title>
 
-    <style type="text/css">
-        body {font-family:Arial, Sans-Serif; background: url(img/ravenna.png);}
 
-        html,body{height:100%;}
-
-        .navbar {
-            margin-bottom: 0;  
-        }
-        .navbar-inverse {
-            background-color: #26ae90;
-            border:none;
-            color: white;
-            border-radius: 0px;
-
-            background-color: #ffb700;
-            background-image: url(img/pccy-orange-pattern-1170x450.jpg);
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-        }
-        /* title */
-        .navbar-inverse .navbar-brand {
-            color: white;
-        }
-
-        navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
-            background-color: #126257;
-
-        }
-
-        .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-            background-color: #126257;
-            color: white;
-        }
-        .navbar-inverse .navbar-nav > li > a {
-            color: white;
-            font-family: 'Indie Flower', cursive;
-            font-size: 18px;
-            font-weight: bold;
-
-        }
-        .navbar-inverse .navbar-nav > .active > a{
-            border-bottom: 3px solid black;
-            background-color: #126257;
-
-        }
-        .carousel,.item,.active{height:100%;}
-        .carousel-inner{height:100%;}
-        .fill{width:100%;height:100%;background-position:center;background-size:cover;}
-
-        .carousel-inner img {
-            margin: auto;
-        }
-
-        .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; }
-        .carousel .item {
-            width: 100%; /*slider width*/
-            max-height: 350px; /*slider height*/
-        }
-        .carousel .item img {
-            width: 100%; /*img width*/
-            height: 100%;
-            //max-height :400px;
-            //padding-top:-150px; 
-            position: relative;
-            //bottom: 100px;;
-        }
-
-        /*full width container*/
-        @media (max-width: 767px) {
-            .block {
-                margin-left: -20px;
-                margin-right: -20px;
-            }
-        }
-
-        @media(max-width:992px){
-            .nav>li>a {
-                padding-left: 10px;
-                padding-right:10px
-            }
-        }
-
-        .carousel-caption{
-            background-color: rgba(0,0,0,0.8);
-            border-radius: 10px;
-        }
-
-        .container{
-            padding-top:50px;
-        }
-
-        .row .thumbnail {
-            border:0;
-            box-shadow:0;
-            border-radius:0;
-        }
-
-        .header {
-            color: #36A0FF;
-            font-size: 27px;
-            padding: 10px;
-        }
-
-        .bigicon {
-            font-size: 35px;
-
-            color: #36A0FF;
-        }
-
-        .endereco_contato{
-
-            font-size: 15px;
-            text-align: center;
-
-
-
-
-        }
-
-        .glyphicon{
-            color: #3366FF;
-
-
-        }
-        .btn {
-            background-color:  #3366FF;
-            border-color: #3366FF;
-            color:white;
-        }
-        .header{
-            color: black;
-            font-family: 'Indie Flower', cursive;
-            font-size: 28px;
-        }
-
-
-        .Flexible-container {
-            position: relative;
-            padding-bottom: 36.25%;
-            padding-top: 30px;
-            height: 0;
-            overflow: hidden;
-
-        }
-
-        .Flexible-container iframe,   
-        .Flexible-container object,  
-        .Flexible-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-    </style>
 
 
 </head>
 <body>
+    
+    <header class="tb-header">
+
+        <h1 class="tb-logo"><a href="#" >Escola Infantil Pingo de Gente</a></h1>
+
+
+        <ul class="tb-social">
+
+            <li><a href="#" title="Link para nosso Facebook">Facebook</a></li>
+        </ul>
+    </header>
+    
     <nav class="navbar navbar-inverse ">
         <div class="container-fluid" style="width:85%;">
 
@@ -198,7 +57,6 @@ and open the template in the editor.
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#">Logo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -228,7 +86,7 @@ and open the template in the editor.
         </div>  
     </nav>
 
-    <div class="container-fluid" style="width:55%;  padding-top:15px;">
+    <div class="container-fluid">
 
 
         <div class="well well-sm" style="background-color:white;border-color: #126257;">
@@ -253,7 +111,7 @@ and open the template in the editor.
             </fieldset>
         </div>
 
-        <div class="container-fluid" style="width:80%;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12"> 
                     <div class="well well-sm" style="background-color:white; border-color: #126257;">
@@ -317,7 +175,7 @@ and open the template in the editor.
 
 
 
-        <footer class="footer" style="background: url(img/green-fibers.png); ">
+       <footer class="footer">
             <div class="container" style="text-align: center; padding-top:10px;color:white;">
                 <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
                 <p>Engenharia de Computação - UFSM</p>

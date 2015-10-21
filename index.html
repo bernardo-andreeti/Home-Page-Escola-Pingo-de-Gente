@@ -17,8 +17,9 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/myStyle.css" rel="stylesheet">
     <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
@@ -31,700 +32,309 @@ and open the template in the editor.
     <![endif]-->
     <title>Pingo de Gente</title>
 
-    <style type="text/css">
 
-
-        h1 {
-            margin: 0;
-
-        }
-
-        body {font-family:Arial, Sans-Serif;
-            //background: url(img/ravenna.png); 
-            }
-
-        html,body{height:100%; margin-top: 0px; padding-top: 0px; }
-
-
-
-        .tb-header {
-           
-            height: 100px;
-            top: 0px;
-            left: 0px;
-            //background-color: #003399;
-            background-color: #003399;
-            width: 100%;
-            opacity: 0.9;
-
-        }
-
-
-        .tb-logo {
-            text-align: center;
-            padding-top: 40px; 
-        }
-
-
-
-        .tb-social {
-            position: absolute;
-            right: 20px;
-            top: 5px;
-            list-style: outside none none;
-        }
-
-        .tb-logo a {
-            width: 350px;
-            height: 63px;
-            background: transparent url("images/tb-logo-header.png") no-repeat scroll center center / contain;
-            color: white;
-            font-family: 'Indie Flower', cursive;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .tb-logo a, .tb-social a {
-            display: inline-block;
-            //text-indent: -9999px;
-            overflow: hidden;
-        }
-
-
-        .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px;  }
-
-        .navbar {
-            margin-bottom: 0;
-
-        }
-
-        .navbar-inverse {
-            // background-color: #26ae90;
-            border:none;
-            color: white;
-            border-radius: 0px;
-background-color: #003399;
-background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-        }
-        /* title */
-        .navbar-inverse .navbar-brand {
-            color: white;
-        }
-
-        navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
-            background-color: #395FA9;
-            
-        }
-
-        .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-            background-color: #395FA9;
-          background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
-            color: white;
-             transition: background-color 0.7s;
-             transition-timing-function: linear;
-             -webkit-transition: background-color 0.7s;
-             -webkit-transition-timing-function: linear;
-             
-        }
-        .navbar-inverse .navbar-nav > li > a {
-            color: white;
-            font-family: 'Indie Flower', cursive;
-            font-size: 18px;
-            font-weight: bold;
-
-        }
-        .navbar-inverse .navbar-nav > .active > a{
-            border-bottom: 3px solid black;
-            background-color: #3366FF;
-            
-background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-        }
-        
-        .navbar-collapse{
-            padding: 0px;
-         
-        }
-
-
-
-        .carousel,.item,.active{height:100%;}
-        .carousel-inner{height:100%;}
-        .fill{width:100%;height:100%;background-position: center;background-size:cover; background-color: black;}
-
-        .carousel-inner img {
-            margin:0 auto;
-        }
-
-
-        .carousel .item {
-            width: 100%; /*slider width*/
-            max-height: 450px; /*slider height*/
-
-        }
-        .carousel .item img {
-            width: 100%; /*img width*/
-            max-width: 1000px;
-            //height: 100%;
-            /* max-height: 600px;
-             min-height: 600px;
-             top: 200px; */
-            // position: fixed;
-            //bottom: 100px;;
-            //vertical-align:middle;
-
-            // background-repeat: no-repeat;
-            //background-attachment: fixed;
-            //background-position: center;
-
-        }
-
-        .carousel-inner>.item>img {
-            margin: 0 auto;
-            height: 400px;
-        }
-
-        #carousel{
-            background-color: #3366FF;
-            background-image: url(img/food.png);
-        }
-
-
-        /*full width container*/
-        @media (max-width: 767px) {
-            .block {
-                margin-left: -20px;
-                margin-right: -20px;
-            }
-        }
-        /* .carousel-caption{
-             background-color: rgba(0,0,0,0.85);
-             border-radius: 10px;
-         }*/
-
-        .carousel-caption {
-            background-color: rgba(0,0,0,0.85);
-            max-width: 1000px;
-
-            padding: 0 20px;
-            margin:0 auto;
-            margin-top: 200px;
-            text-align:center;
-        }
-
-        .carousel-indicators{
-       margin-bottom: 0px;
-            padding-bottom: 0px;
-            bottom:0px;
-            background-color: rgba(0,0,0,0.85);
-           
-            
-            
-             
-        }
-
-        .content{
-            //background: url(http://1.bp.blogspot.com/-xaCk1twMJ3E/UvuTqr2vNZI/AAAAAAAAcHE/k7kaxZblDI4/s1600/Clouds_blue1_Paper.png) ;
-            //background-size: cover;
-            background: url(img/bg-noticias.jpg) no-repeat;
-            
-         background-attachment: fixed;
-             -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-            margin: 0 auto;
-            padding-top: 50px;
-            padding-bottom: 70px;
-
-            
-           
-            
-        }
-
-        .content-inner > .container > .container-fluid{
-            margin: 0 auto;
-            
-        }
-
-        .content-inner{
-           
-            width: 970px; 
-            background: white;
-            margin: 0 auto;
-            border: solid 1px black;
-            border-radius: 10px;
-
-
-            
-        }
-        
-        
-        
-
-        .container{
-            padding-top:15px;
-            margin: 0 auto;
-            
-            max-width: 950px;
-        }
-
-
-
-        .jumbotron{
-            background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
-            height: 350px;
-            margin-top:15px;
-        }
-
-        .row .thumbnail {
-            border:0;
-            box-shadow:0;
-            border-radius:0;
-        }
-
-        #quemSomos, #thumb{
-            /* border-radius: 0px;padding-bottom: 20px;border: solid 1px #126257;*/
-        }
-        #quemSomos{
-            padding-bottom: 5px;
-            padding-left:5px;
-            margin-left: 5px;
-        }
-
-        #bottom{
-
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background-color: #F9F9F9;
-            border-top: 1px solid rgba(20, 20, 20, 0.8);
-          border-radius: 10px;
-            padding-top:20px;
-            
-            
-        }
-        
-        #bottom_item{
-            
-            //font-family: 'Indie Flower', cursive;
-            
-        }
-
-        .footer{
-            background-color: #B5CB61;
-            //background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
-           // background-image: url("http://gouldandstearns.com/footer.grass.png");
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-        height: 300px;
-        
-        }
-
-
-
-
-        .Flexible-container-maps {
-            position: relative;
-            padding-bottom: 38.25%;
-            padding-top: 25px;
-            height: 0;
-            overflow: hidden;
-
-        }
-
-        .Flexible-container-video {
-            position: relative;
-            padding-bottom: 62.25%;
-            padding-top: 25px;
-            height: 0;
-            overflow: hidden;
-
-        }
-
-        .Flexible-container-maps iframe,   
-        .Flexible-container-maps object,  
-        .Flexible-container-maps embed, 
-        .Flexible-container-video iframe,   
-        .Flexible-container-video object,  
-        .Flexible-container-video embed{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding-right: 20px;
-
-        }
-
-        .endereco_contato{
-
-            font-size: 13px;
-            text-align: center;
-
-        }
-
-
-        
-        .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-/*
-  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-  Need to override the 3.3 new styles for modern browsers & apply opacity
-*/
-@media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.next.left,
-    .carousel-fade .carousel-inner > .item.prev.right,
-    .carousel-fade .carousel-inner > .item.active {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-}
-
-.red-cell {
-   background-color: #26ae90; /* Or some other color */
-}
-
-
-
-    </style>
 </head>
 <body>
 
-    <header class="tb-header">
-
-        <h1 class="tb-logo"><a href="#" >Escola Infantil Pingo de Gente</a></h1>
 
 
-        <ul class="tb-social">
+        <header class="tb-header">
 
-            <li><a href="#" title="Link para nosso Facebook">Facebook</a></li>
-        </ul>
-    </header>
+            <h1 class="tb-logo"><a href="#" >Escola Infantil Pingo de Gente</a></h1>
 
-    <nav class="navbar navbar-inverse ">
-        <div class="container-fluid">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <ul class="tb-social">
 
-             
+                <li><a href="#" title="Link para nosso Facebook">Facebook</a></li>
+            </ul>
+        </header>
+
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Início <span class="sr-only">(current)</span></a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="galeria.html">Galeria de Fotos</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="contato.html">Contato</a></li>  
+
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="O que você procura?">
+                            </div>
+                            <button type="submit" class="btn btn-default">Pesquisar</button>
+                        </form>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+            </div>  
+        </nav>
+
+
+        <div class="row">
+            <div class="col-md-12" style="padding-right:0px; padding-left: 0px;"  >
+                <div class="carousel slide carousel-fade" id="carousel">
+                    <div class="container-fluid">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators" style="max-width: 1000px;">
+                                <li data-slide-to="0" data-target="#carousel" class="active">
+                                </li>
+                                <li data-slide-to="1" data-target="#carousel">
+                                </li>
+                                <li data-slide-to="2" data-target="#carousel">
+                                </li>
+                            </ol>
+
+                            <div class="item">
+                                <img class="img-responsive center-block" alt="Carousel Bootstrap First" src="img/kids-4.jpg" />
+                                <div class="carousel-caption">
+                                    <h4>
+                                        First Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive center-block" alt="Carousel Bootstrap Second" src="img/kids-playing.jpg" />
+                                <div class="carousel-caption">
+                                    <h4>
+                                        Second Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <img class="img-responsive center-block" alt="Carousel Bootstrap Third" src="img/o-TALKING-TO-KIDS-ABOUT-RACE-facebook.jpg" />
+                                <div class="carousel-caption">
+                                    <h4>
+                                        Third Thumbnail label
+                                    </h4>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <a class="left carousel-control" href="#carousel" data-slide="prev"><span  class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Início <span class="sr-only">(current)</span></a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="galeria.html">Galeria de Fotos</a></li>
-                    <li><a href="noticias.html">Notícias</a></li>
-                    <li><a href="calendario.html">Calendário</a></li>
-                    <li><a href="contato.html">Contato</a></li>  
+        <div class="content">
+            <div class="content-inner">
 
 
-                </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="O que você procura?">
-                        </div>
-                        <button type="submit" class="btn btn-default">Pesquisar</button>
-                    </form>
-
-                </ul>
-            </div><!-- /.navbar-collapse -->
-            <!-- /.container-fluid -->
-        </div>  
-    </nav>
-
-
-    <div class="row">
-        <div class="col-md-12" style="padding-right:0px; padding-left: 0px;"  >
-            <div class="carousel slide carousel-fade" id="carousel">
-                <div class="container-fluid">
-                    <div class="carousel-inner">
-                    <ol class="carousel-indicators" style="max-width: 1000px;">
-                        <li data-slide-to="0" data-target="#carousel" class="active">
-                        </li>
-                        <li data-slide-to="1" data-target="#carousel">
-                        </li>
-                        <li data-slide-to="2" data-target="#carousel">
-                        </li>
-                    </ol>
-                    
-                        <div class="item">
-                            <img class="img-responsive center-block" alt="Carousel Bootstrap First" src="img/kids-4.jpg" />
-                            <div class="carousel-caption">
-                                <h4>
-                                    First Thumbnail label
-                                </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
+                <div class="container" >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="jumbotron">
+                                    <h2>
+                                        Quem somos?
+                                    </h2>
+                                    <p>
+                                        This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <img class="img-responsive center-block" alt="Carousel Bootstrap Second" src="img/kids-playing.jpg" />
-                            <div class="carousel-caption">
-                                <h4>
-                                    Second Thumbnail label
-                                </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item active">
-                            <img class="img-responsive center-block" alt="Carousel Bootstrap Third" src="img/o-TALKING-TO-KIDS-ABOUT-RACE-facebook.jpg" />
-                            <div class="carousel-caption">
-                                <h4>
-                                    Third Thumbnail label
-                                </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
+                    </div>
+                </div>
+
+
+                <div class="container" >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-4" >
+                                        <div class="thumbnail" id="thumb">
+                                            <img alt="Bootstrap Thumbnail First" src="img/-_Summer_Program_for_Kids_-_03-28-13_-_small.jpg" />
+                                            <div class="caption">
+                                                <h3>
+                                                    Qualidade
+                                                </h3>
+                                                <p>
+                                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                </p>
+                                                <p>
+                                                    <a class="btn btn-primary" href="sobre.html">Ler mais</a> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="thumbnail" id="thumb">
+                                            <img alt="Bootstrap Thumbnail Second" src="img/Kids-Can-Teach.jpg" />
+                                            <div class="caption">
+                                                <h3>
+                                                    Estrutura
+                                                </h3>
+                                                <p>
+                                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                </p>
+                                                <p>
+                                                    <a class="btn btn-primary" href="sobre.html">Ler mais</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="thumbnail" id="thumb">
+                                            <img alt="Bootstrap Thumbnail Third" src="img/great_kids_home_pic.jpg" />
+                                            <div class="caption">
+                                                <h3>
+                                                    Nossa Missão
+                                                </h3>
+                                                <p>
+                                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                </p>
+                                                <p>
+                                                    <a class="btn btn-primary" href="sobre.html">Ler mais</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div> 
-                    <a class="left carousel-control" href="#carousel" data-slide="prev"><span  class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="content-inner">
-       
-
-
-    <div class="container" >
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="jumbotron">
-                        <h2>
-                            Quem somos?
-                        </h2>
-                        <p>
-                            This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                        </p>
-                        <p>
-                            <a class="btn btn-primary btn-large" href="#">Learn more</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" >
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4" >
-                            <div class="thumbnail" id="thumb">
-                                <img alt="Bootstrap Thumbnail First" src="img/-_Summer_Program_for_Kids_-_03-28-13_-_small.jpg" />
-                                <div class="caption">
-                                    <h3>
-                                        Qualidade
-                                    </h3>
-                                    <p>
-                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-primary" href="sobre.html">Ler mais</a> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail" id="thumb">
-                                <img alt="Bootstrap Thumbnail Second" src="img/Kids-Can-Teach.jpg" />
-                                <div class="caption">
-                                    <h3>
-                                        Estrutura
-                                    </h3>
-                                    <p>
-                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-primary" href="sobre.html">Ler mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="thumbnail" id="thumb">
-                                <img alt="Bootstrap Thumbnail Third" src="img/great_kids_home_pic.jpg" />
-                                <div class="caption">
-                                    <h3>
-                                        Nossa Missão
-                                    </h3>
-                                    <p>
-                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-primary" href="sobre.html">Ler mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
 
 
 
-    <div id="bottom">
-        <div class="container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="well well-sm" id="bottom_item" >
-                                    <fieldset>
-                                        <legend class="text-center header" style="color:black;" >Vídeo Institucional</legend>
-                                    </fieldset>
-                                    <div class="Flexible-container-video">
-                                        <!-- Copy & Pasted from YouTube -->
-                                        <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-                                    </div>
+                <div id="bottom">
+                    <div class="container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="well well-sm" id="bottom_item" >
+                                                <fieldset>
+                                                    <legend class="text-center header" style="color:black;" >Vídeo Institucional</legend>
+                                                </fieldset>
+                                                <div class="Flexible-container-video">
+                                                    <!-- Copy & Pasted from YouTube -->
+                                                    <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                                                </div>
 
 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="well well-sm" id="bottom_item">
-                                    <fieldset>
-                                        <legend class="text-center header" style="color:black;" >Onde Estamos?</legend>
-                                        <div style="float:left;margin-right: 40px;">
-                                            <div class="text-center"  >
-
-                                                <address class="endereco_contato">
-                                                    <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
-                                                </address>
-                                                <div><a class="btn btn-primary" href="contato.html">Entre em contato</a></div>
-                                            </div>
-
-                                        </div>
-                                        <div>
-                                            <div class="Flexible-container-maps">
-
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1767.3715836663316!2d-52.27088855381342!3d-27.632469972853983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sch!4v1443231427794" width="500" height="400" frameborder="0" allowfullscreen></iframe>
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <div class="well well-sm" id="bottom_item">
+                                                <fieldset>
+                                                    <legend class="text-center header" style="color:black;" >Onde Estamos?</legend>
+                                                    <div style="float:left;margin-right: 40px;">
+                                                        <div class="text-center"  >
+
+                                                            <address class="endereco_contato">
+                                                                <strong >Educação Infantil Pingo de Gente</strong><br /> Rua Nelson Ehlers, 379<br /> Erechim, RS<br /> <abbr title="Phone">P:</abbr> 054 3015-1155
+                                                            </address>
+                                                            <div><a class="btn btn-primary" href="contato.html">Entre em contato</a></div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div>
+                                                        <div class="Flexible-container-maps">
+
+                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1767.3715836663316!2d-52.27088855381342!3d-27.632469972853983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sch!4v1443231427794" width="500" height="400" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
 
 
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="well well-sm" id="bottom_item">
-                                    <fieldset>
-                                        <legend class="text-center header" style="color:black;" >Redes Sociais</legend>
-                                    </fieldset>
-                                    <div>
-                                        <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
-                                        <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="well well-sm" id="bottom_item">
+                                                <fieldset>
+                                                    <legend class="text-center header" style="color:black;" >Redes Sociais</legend>
+                                                </fieldset>
+                                                <div>
+                                                    <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
+                                                    <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
-                </div>
+                </div> 
+
             </div> 
-        </div>
-    </div> 
 
-    </div> 
-    
 
-    </div> <!-- content --> 
+        </div> <!-- content --> 
 
 
 
-    <footer class="footer">
-        <div class="container" style="text-align: center; padding-top:10px;color:white;">
-            <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
-            <p>Engenharia de Computação - UFSM</p>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <p> <strong>Desenvolvido por Bernardo Favero Andreeti e José Augusto Comiotto Rottini</strong></p>
+                <p>Engenharia de Computação - UFSM</p>
+            </div>
+        </footer>
 
 
 
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-       $(document).ready(function() {
-           var i=0;
-           var colors = ["#fe9314", "#FF6699", "#8AE68A", "#FFFF66"];
-           
-           $("#carousel").css("backgroundColor", colors[0]);
-         
-  $('.carousel-control').click( function() {
-     // window.alert("oi");
-     
-     i++;
-     i = (i == colors.length) ? 0 : i;
-   $("#carousel").stop().animate({backgroundColor: colors[i]}, 3000);
-   
-    
-  } );
-} );
-    </script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            var i = 0;
+            var colors = ["#fe9314", "#FF6699", "#8AE68A", "#FFFF66"];
+
+            $("#carousel").css("backgroundColor", colors[0]);
+
+            $('.carousel-control').click(function () {
+                // window.alert("oi");
+
+                i++;
+                i = (i == colors.length) ? 0 : i;
+                $("#carousel").stop().animate({backgroundColor: colors[i]}, 3000);
+
+
+            });
+        });
+        </script>
 
 </body>
 </html>

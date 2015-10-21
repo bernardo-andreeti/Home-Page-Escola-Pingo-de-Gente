@@ -1,0 +1,441 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/10/2015, 21:03:34
+    Author     : guto
+*/
+
+
+h1 {
+    margin: 0;
+}
+
+body {font-family:Arial, Sans-Serif; 
+}
+
+html,body{height:100%; margin-top: 0px; padding-top: 0px; }
+
+
+/* Cabeçalho */
+.tb-header {
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: #003399;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+.tb-logo {
+    text-align: center;
+    padding-top: 40px; 
+}
+
+
+.tb-social {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    list-style: outside none none;
+}
+
+.tb-logo a {
+    width: 350px;
+    height: 63px;
+    background: transparent url("images/tb-logo-header.png") no-repeat scroll center center / contain;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tb-logo a, .tb-social a {
+    display: inline-block;
+    //text-indent: -9999px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px;  }
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    border:none;
+    color: white;
+    border-radius: 0px;
+    background-color: #003399;
+    background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+/* title */
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
+    background-color: #395FA9;
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
+    background-color: #395FA9;
+    background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+    color: white;
+    transition: background-color 0.7s;
+    transition-timing-function: linear;
+    -webkit-transition: background-color 0.7s;
+    -webkit-transition-timing-function: linear;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.navbar-inverse .navbar-nav > .active > a{
+    border-bottom: 3px solid black;
+    background-color: #3366FF;
+
+    background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+
+.navbar-collapse{
+    padding: 0px;
+
+}
+
+
+
+
+
+
+
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{width:100%;height:100%;background-position: center;background-size:cover; background-color: black;}
+
+.carousel-inner img {
+    margin:0 auto;
+}
+
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 450px; /*slider height*/
+
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+    max-width: 1000px;
+    //height: 100%;
+    /* max-height: 600px;
+     min-height: 600px;
+     top: 200px; */
+    // position: fixed;
+    //bottom: 100px;;
+    //vertical-align:middle;
+
+    // background-repeat: no-repeat;
+    //background-attachment: fixed;
+    //background-position: center;
+
+}
+
+.carousel-inner>.item>img {
+    margin: 0 auto;
+    height: 400px;
+}
+
+#carousel{
+    background-color: #3366FF;
+    background-image: url(../img/food.png);
+}
+
+
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+/* .carousel-caption{
+     background-color: rgba(0,0,0,0.85);
+     border-radius: 10px;
+ }*/
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.85);
+    max-width: 1000px;
+
+    padding: 0 20px;
+    margin:0 auto;
+    margin-top: 200px;
+    text-align:center;
+}
+
+.carousel-indicators{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.85);
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+.content{
+    background: url(../img/bg-noticias.jpg) repeat-x scroll left top;
+
+
+    /*background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+
+
+
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.content-inner > .container > .container-fluid{
+    margin: 0 auto;
+}
+
+.content-inner{
+
+    width: 970px; 
+    background: white;
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+
+.container{
+    padding-top:15px;
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+
+.jumbotron{
+    background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
+    height: 350px;
+    margin-top:15px;
+}
+
+.row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+}
+
+#quemSomos, #thumb{
+}
+
+#quemSomos{
+    padding-bottom: 5px;
+    padding-left:5px;
+    margin-left: 5px;
+}
+
+#bottom{
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #F9F9F9;
+    border-top: 1px solid rgba(20, 20, 20, 0.8);
+    border-radius: 10px;
+    padding-top:20px;
+
+
+}
+
+#bottom_item{
+
+}
+
+
+
+
+.footer{
+    background-color: #B5CB61;
+    height: 200px;
+
+}
+
+.footer>.container{
+    text-align: center; padding-top:10px;color:white;
+}
+
+
+.Flexible-container-maps {
+    position: relative;
+    padding-bottom: 38.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.Flexible-container-video {
+    position: relative;
+    padding-bottom: 62.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.Flexible-container-maps iframe,   
+.Flexible-container-maps object,  
+.Flexible-container-maps embed, 
+.Flexible-container-video iframe,   
+.Flexible-container-video object,  
+.Flexible-container-video embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+
+}
+
+.endereco_contato{
+
+    font-size: 13px;
+    text-align: center;
+
+}
+
+
+/* Sobre */
+.container{
+    padding-top:50px;
+}
+
+.row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+}
+
+
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.img-circle{
+    width: 200px;
+    height: 200px;        
+}
+
+.thumbnail{
+    border-radius: 20px;padding-bottom: 20px;border: solid 1px #126257;
+}
+
+.thumbnail>fieldset{
+    text-decoration: #126257; font-family: cursive; color: #126257; padding-left: 15px;
+}
+
+
+
+
+/* Contato*/
+.bigicon {
+    font-size: 35px;
+
+    color: #003399;
+}
+
+.glyphicon{
+    color: #003399;
+
+
+}
+.btn {
+    background-color:  #003399;
+    border-color: #003399;
+    color:white;
+}
