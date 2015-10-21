@@ -39,7 +39,9 @@ and open the template in the editor.
 
         }
 
-        body {font-family:Arial, Sans-Serif;background: url(img/ravenna.png);  }
+        body {font-family:Arial, Sans-Serif;
+            //background: url(img/ravenna.png); 
+            }
 
         html,body{height:100%; margin-top: 0px; padding-top: 0px; }
 
@@ -47,17 +49,20 @@ and open the template in the editor.
 
         .tb-header {
            
-            height: 60px;
+            height: 100px;
             top: 0px;
             left: 0px;
-            background-color: #3366FF;
+            //background-color: #003399;
+            background-color: #003399;
             width: 100%;
+            opacity: 0.9;
+
         }
 
 
         .tb-logo {
             text-align: center;
-            padding-top: 15px; 
+            padding-top: 40px; 
         }
 
 
@@ -75,7 +80,7 @@ and open the template in the editor.
             background: transparent url("images/tb-logo-header.png") no-repeat scroll center center / contain;
             color: white;
             font-family: 'Indie Flower', cursive;
-            font-size: 27px;
+            font-size: 25px;
             font-weight: bold;
         }
         .tb-logo a, .tb-social a {
@@ -85,7 +90,8 @@ and open the template in the editor.
         }
 
 
-        .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px; }
+        .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px;  }
+
         .navbar {
             margin-bottom: 0;
 
@@ -96,11 +102,9 @@ and open the template in the editor.
             border:none;
             color: white;
             border-radius: 0px;
-
-            background-color: #33CCFF;
-            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
-            /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
+background-color: #003399;
+background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         }
         /* title */
         .navbar-inverse .navbar-brand {
@@ -108,13 +112,13 @@ and open the template in the editor.
         }
 
         navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-inverse .navbar-brand:active {
-            background-color: #126257;
+            background-color: #395FA9;
             
         }
 
         .navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a:enabled {
-            background-color: #3366FF;
-            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");
+            background-color: #395FA9;
+          background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
             color: white;
              transition: background-color 0.7s;
              transition-timing-function: linear;
@@ -132,7 +136,9 @@ and open the template in the editor.
         .navbar-inverse .navbar-nav > .active > a{
             border-bottom: 3px solid black;
             background-color: #3366FF;
-            background-image: url("http://www.transparenttextures.com/patterns/tree-bark.png");;
+            
+background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
         }
         
@@ -217,18 +223,59 @@ and open the template in the editor.
             
              
         }
+
+        .content{
+            //background: url(http://1.bp.blogspot.com/-xaCk1twMJ3E/UvuTqr2vNZI/AAAAAAAAcHE/k7kaxZblDI4/s1600/Clouds_blue1_Paper.png) ;
+            //background-size: cover;
+            background: url(img/bg-noticias.jpg) no-repeat;
+            
+         background-attachment: fixed;
+             -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 70px;
+
+            
+           
+            
+        }
+
+        .content-inner > .container > .container-fluid{
+            margin: 0 auto;
+            
+        }
+
+        .content-inner{
+           
+            width: 970px; 
+            background: white;
+            margin: 0 auto;
+            border: solid 1px black;
+            border-radius: 10px;
+
+
+            
+        }
         
         
         
 
         .container{
-            padding-top:50px;
+            padding-top:15px;
+            margin: 0 auto;
+            
+            max-width: 950px;
         }
+
+
 
         .jumbotron{
             background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
             height: 350px;
-            margin-top:10px;
+            margin-top:15px;
         }
 
         .row .thumbnail {
@@ -254,13 +301,25 @@ and open the template in the editor.
             left: 0px;
             background-color: #F9F9F9;
             border-top: 1px solid rgba(20, 20, 20, 0.8);
-            border-bottom: 1px solid rgba(20, 20, 20, 0.8);
+          border-radius: 10px;
+            padding-top:20px;
+            
+            
+        }
+        
+        #bottom_item{
+            
+            //font-family: 'Indie Flower', cursive;
+            
         }
 
         .footer{
-            background-color: #000099;
-            background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
+            background-color: #B5CB61;
+            //background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
+           // background-image: url("http://gouldandstearns.com/footer.grass.png");
             /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        height: 300px;
+        
         }
 
 
@@ -477,6 +536,10 @@ and open the template in the editor.
         </div>
     </div>
 
+    <div class="content">
+        <div class="content-inner">
+       
+
 
     <div class="container" >
         <div class="container-fluid">
@@ -567,7 +630,7 @@ and open the template in the editor.
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="well well-sm" style="background-color:white;border-color: #126257;padding-left: 30px;min-height: 300px;">
+                                <div class="well well-sm" id="bottom_item" >
                                     <fieldset>
                                         <legend class="text-center header" style="color:black;" >Vídeo Institucional</legend>
                                     </fieldset>
@@ -580,7 +643,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="well well-sm" style="background-color:white;border-color: #126257;">
+                                <div class="well well-sm" id="bottom_item">
                                     <fieldset>
                                         <legend class="text-center header" style="color:black;" >Onde Estamos?</legend>
                                         <div style="float:left;margin-right: 40px;">
@@ -605,8 +668,10 @@ and open the template in the editor.
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="well well-sm" style="background-color:white;border-color: #126257; padding-left: 20px;">
-                                    <h4 >Redes Sociais</h4>
+                                <div class="well well-sm" id="bottom_item">
+                                    <fieldset>
+                                        <legend class="text-center header" style="color:black;" >Redes Sociais</legend>
+                                    </fieldset>
                                     <div>
                                         <i class="fa fa-facebook-official fa-3x" style="color: #46629E; padding-right: 30px;padding-top:15px; padding-left: 10px;" ></i>
                                         <i class="fa fa-twitter fa-3x" style="color: #73C0EC;" ></i>
@@ -619,7 +684,12 @@ and open the template in the editor.
                 </div>
             </div> 
         </div>
-    </div>  
+    </div> 
+
+    </div> 
+    
+
+    </div> <!-- content --> 
 
 
 
@@ -640,7 +710,7 @@ and open the template in the editor.
     <script>
        $(document).ready(function() {
            var i=0;
-           var colors = ["#fe9314", "#FF75FF", "#66FF66", "#FFFF33"];
+           var colors = ["#fe9314", "#FF6699", "#8AE68A", "#FFFF66"];
            
            $("#carousel").css("backgroundColor", colors[0]);
          
