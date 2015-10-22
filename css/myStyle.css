@@ -358,6 +358,8 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 #bottom_item{
     margin: 0 auto;
+    width: 65%;
+    height: 65%;
 }
 
 #bottom_item > div{
@@ -376,7 +378,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 }
 
 .footer>.container{
-    text-align: center; padding-top:10px;color:white;
+    text-align: center; padding-top:10px; color:white; 
 }
 
 
@@ -414,10 +416,8 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 }
 
 .endereco_contato{
-
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
-
 }
 
 
