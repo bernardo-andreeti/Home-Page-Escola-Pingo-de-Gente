@@ -275,6 +275,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     margin: 0 auto;
     padding-top: 50px;
     
+    
     padding-bottom: 70px;
     
     box-shadow: 5px 5px 15px #888888;
@@ -304,7 +305,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 
 .container{
-    padding-top:0px;
+    padding-top:20px;
     margin: 0 auto;
     max-width: 950px;
 }
@@ -313,8 +314,8 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 .jumbotron{
     background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
     height: 350px;
-    margin-top:-10px;
-    //padding-top:-25px;
+    margin-top:20px;
+    padding-top:25px;
 }
 
 .row .thumbnail {
@@ -421,9 +422,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 
 /* Sobre */
-.container{
-    padding-top:50px;
-}
+
 
 .row .thumbnail {
     border:0;
