@@ -14,7 +14,13 @@ h1 {
 }
 
 body {
-    font-family:Arial, Sans-Serif; background: url(../img/grey.png) ;
+    font-family:Arial, Sans-Serif; background: url(../img/grey.png);
+    
+   
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a1dbff+0,cbebff+29,f0f9ff+68 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eab16b+0,f6e6b4+48 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bddd49+0,e3f5ab+30,f8ffe8+100 */
+
 }
 
 html,body{height:100%; margin-top: 0px; padding-top: 0px; }
@@ -26,6 +32,7 @@ html,body{height:100%; margin-top: 0px; padding-top: 0px; }
     top: 0px;
     left: 0px;
     background-color: #003399;
+
     width: 100%;
     opacity: 0.9;
 
@@ -60,7 +67,7 @@ html,body{height:100%; margin-top: 0px; padding-top: 0px; }
     overflow: hidden;
 }
 
-.container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px;  }
+.container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px; padding-left: 0px; padding-right:0px;  }
 
 .navbar {
     margin-bottom: 0;
@@ -71,6 +78,8 @@ html,body{height:100%; margin-top: 0px; padding-top: 0px; }
     color: white;
     border-radius: 0px;
     background-color: #003399;
+ 
+   
     background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -117,7 +126,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 .carousel,.item,.active{height:100%;}
 .carousel-inner{height:100%;}
-.fill{width:100%;height:100%;background-position: center;background-size:cover; background-color: black;}
+.fill{width:100%;height:100%;background-position: center;background-size:cover; background-color: black; }
 
 .carousel-inner img {
     margin:0 auto;
@@ -152,7 +161,8 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 }
 
 #row_carousel{
-    margin: 0;
+    margin: 0 auto;
+    
 }
 
 #col_carousel{
@@ -163,6 +173,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 #carousel{
     background-color: #3366FF;
     background-image: url(../img/food.png);
+  
     box-shadow: 0px 5px 15px #888888;
     -moz-box-shadow: 0px 5px 15px #888888;
         -webkit-box-shadow: 0px 5px 15px #888888;
@@ -182,7 +193,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
  }*/
 
 .carousel-caption {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.65);
     max-width: 1000px;
 
     padding: 0 20px;
@@ -195,7 +206,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     margin-bottom: 0px;
     padding-bottom: 0px;
     bottom:0px;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.65);
 }
 
 
@@ -223,6 +234,14 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 .carousel-fade .carousel-control {
     z-index: 2;
 }
+
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
 
 /*
   WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
@@ -260,18 +279,23 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
+    
+    background-color: white;
 
 
 
     margin: 0 auto;
-    padding-top: 50px;
-    
-    
-    padding-bottom: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     
     box-shadow: 5px 5px 15px #888888;
     -moz-box-shadow: 5px 5px 15px #888888;
         -webkit-box-shadow: 5px 5px 15px #888888;
+        max-width: 1000px;
+        margin-top:50px;
+        margin-bottom:50px;
     
  
 }
@@ -305,8 +329,9 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 .jumbotron{
     background-image: url("http://www.optimistmcr.com/uploads/3/9/3/1/39316493/4704152.jpg");
     max-height: 350px;
-    margin-top:20px;
-    padding-top:25px;
+    margin-top:0px;
+    padding-top:20px;
+    
 }
 
 .row .thumbnail {
@@ -315,14 +340,13 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     border-radius:0;
 }
 
-#quemSomos, #thumb{
+
+
+.quemSomos{
+   width: 500px;
 }
 
-#quemSomos{
-    padding-bottom: 5px;
-    padding-left:5px;
-    margin-left: 5px;
-}
+
 
 #bottom{
 
@@ -349,7 +373,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 #bottom_item{
     margin: 0 auto;
-    width: 65%;
+    width: 75%;
     height: 65%;
 }
 
@@ -358,7 +382,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 }
 
 .well-sm{
-    background-color:white; border-color: #126257; 
+    background-color:white; 
 }
 
 .titulo{
@@ -415,19 +439,29 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 }
 
 .endereco_contato{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
 
 /* Sobre */
 
+.sobre{
+    padding-right: 40px;
+    
+}
+
+.sobre>p{
+    width: 900px;
+} 
 
 .row .thumbnail {
     border:0;
     box-shadow:0;
     border-radius:0;
 }
+
+
 
 
 
@@ -472,11 +506,13 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 // Photo Gallery
 #ul_gallery {         
     padding:0 0 0 0;
-    margin:0 0 0 0;
+    margin-left: 0px;
 }
 #ul_gallery > li {     
     list-style:none;
-    margin-bottom:25px;           
+    margin-bottom:25px; 
+    margin-left: 0px;
+    padding-left: 0px;
 }
 #ul_gallery > li img {
     cursor: pointer;
