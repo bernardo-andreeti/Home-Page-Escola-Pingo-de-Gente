@@ -150,6 +150,15 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     height: 400px;
 }
 
+#row_carousel{
+    margin: 0;
+}
+
+#col_carousel{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #carousel{
     background-color: #3366FF;
     background-image: url(../img/food.png);
@@ -347,7 +356,15 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     margin: 0 auto;
 }
 
+.well-sm{
+    background-color:white; border-color: #126257; 
+}
 
+.titulo{
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    padding: 10px;
+}
 
 
 .footer{
