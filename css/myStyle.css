@@ -14,7 +14,7 @@ h1 {
 }
 
 body {
-    font-family:Arial, Sans-Serif; background: url(../img/grey.png);
+    font-family:Arial, Sans-Serif; background: url(../img/transp_bg.png);
     
    
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a1dbff+0,cbebff+29,f0f9ff+68 */
@@ -395,7 +395,7 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 .footer{
     background-color: #003399;
     
-    height: 100px;
+    height: 80px;
 
 
 }
