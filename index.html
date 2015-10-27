@@ -16,12 +16,24 @@ and open the template in the editor.
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/myStyle.css" rel="stylesheet">
     <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+        <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+     
+    <!--  jQuery 1.7+  -->
+    <script src="jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="assets/owl-carousel/owl.carousel.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,7 +61,7 @@ and open the template in the editor.
         </ul>
     </header>
 
-    <nav class="navbar navbar-inverse ">
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -95,6 +107,7 @@ and open the template in the editor.
         <div class="col-md-12" id="col_carousel">
             <div class="carousel slide carousel-fade" id="carousel">
                 <div class="container-fluid">
+                    
                     <div class="carousel-inner">
                         <ol class="carousel-indicators" style="max-width: 1000px;">
                             <li data-slide-to="0" data-target="#carousel" class="active">
@@ -104,10 +117,11 @@ and open the template in the editor.
                             <li data-slide-to="2" data-target="#carousel">
                             </li>
                         </ol>
-
+                        
                         <div class="item">
-
-                            <img class="img-responsive center-block" alt="Carousel Bootstrap First" src="img/kids-4.jpg" />
+                            
+                            <img class="img-responsive center-block"  alt="Carousel Bootstrap First" src="img/kids-4.jpg" />
+                            
 
                             <div class="carousel-caption">
                                 <h4>
@@ -117,7 +131,9 @@ and open the template in the editor.
                                     Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                                 </p>
                             </div>
+                        
                         </div>
+                       
                         <div class="item">
                             <img class="img-responsive center-block" alt="Carousel Bootstrap Second" src="img/kids-playing.jpg" />
                             <div class="carousel-caption">
@@ -129,10 +145,12 @@ and open the template in the editor.
                                 </p>
                             </div>
                         </div>
+                        
+                        
                         <div class="item active">
                             <img class="img-responsive center-block" alt="Carousel Bootstrap Third" src="img/o-TALKING-TO-KIDS-ABOUT-RACE-facebook.jpg" />
                             <div class="carousel-caption">
-                                <h4>
+                                <h4 >
                                     Third Thumbnail label
                                 </h4>
                                 <p>
@@ -141,6 +159,8 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div> 
+                    
+                   
                     <a class="left carousel-control" href="#carousel" data-slide="prev"><span  class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
@@ -171,7 +191,7 @@ and open the template in the editor.
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1s">
+                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <div class="col-md-4" >
                             <div class="thumbnail" id="thumb">
                                 <img alt="Bootstrap Thumbnail First" src="img/-_Summer_Program_for_Kids_-_03-28-13_-_small.jpg" />
@@ -189,7 +209,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="2s">
+                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.0s">
                         <div class="col-md-4">
                             <div class="thumbnail" id="thumb">
                                 <img alt="Bootstrap Thumbnail Second" src="img/Kids-Can-Teach.jpg" />
@@ -207,7 +227,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="3s">
+                    <div class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
                         <div class="col-md-4">
                             <div class="thumbnail" id="thumb">
                                 <img alt="Bootstrap Thumbnail Third" src="img/great_kids_home_pic.jpg" />
@@ -319,6 +339,8 @@ and open the template in the editor.
     <script src="js/wow.min.js"></script>
     <script>
   new WOW().init();
+  
+
     </script>
 
 </body>
