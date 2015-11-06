@@ -14,7 +14,7 @@ h1 {
 }
 
 body {
-    font-family:Arial, Sans-Serif; background: url(../img/crossword.png);
+    font-family:Arial, Sans-Serif; background: url(../img/gplaypattern.png);
     
    
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a1dbff+0,cbebff+29,f0f9ff+68 */
@@ -28,22 +28,44 @@ html,body{height:100%; margin-top: 0px; padding-top: 0px; }
 
 /* Cabeçalho */
 .tb-header {
-    height: 80px;
+    height: 150px;
     top: 0px;
     left: 0px;
     //background-color: #003399;
-    background-color: white;
+    //background-color: #FFBB34;
+    //background-color: white;
 
     width: 100%;
-    opacity: 0.9;
-    //background: url(../img/crossword.png);
-    
-
+    //opacity: 0.9;
+    background: url(../img/gplaypattern.png);
 
 }
 
+.tb-header .container-fluid{
+        padding:0px 0px 0px 0px;
+      
+}
 
-.tb-logo {
+#col_header{
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.tb-img {
+    background: url('../img/logo.png') no-repeat scroll 40% 0% transparent;
+      
+        
+    min-height: 120px;
+   
+    margin-top: 0px;
+    margin-left: 0px;
+    
+    margin-top: 10px;
+}
+
+
+.tb-titulo {
     text-align: center;
     padding-top: 30px; 
 }
@@ -54,22 +76,47 @@ html,body{height:100%; margin-top: 0px; padding-top: 0px; }
     right: 20px;
     top: 5px;
     list-style: outside none none;
+    text-align: center;
 }
 
-.tb-logo a {
-    width: 350px;
-    height: 63px;
+.endereco_contato_header{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+.tb-titulo a {
+    width: 550px;
+    height: 50px;
     background: transparent url("images/tb-logo-header.png") no-repeat scroll center center / contain;
     color: #003399;
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
-    font-weight: bold;
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+   // padding-top: 5px;
+    //font-weight: bold;
 }
-.tb-logo a, .tb-social a {
+
+.tb-titulo div {
+    width: 550px;
+    height: 30px;
+    background: transparent url("images/tb-logo-header.png") no-repeat scroll center center / contain;
+    color: #003399;
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    margin: 0 auto;
+    //font-weight: bold;
+}
+
+
+.tb-titulo a, .tb-social a, tb-titulo div {
     display: inline-block;
     //text-indent: -9999px;
     overflow: hidden;
 }
+
 
 .container-fluid{padding-bottom: 0; margin-bottom: 0;width: 100%; max-width: 1000px; padding-left: 0px; padding-right:0px;  }
 
@@ -367,7 +414,9 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
     bottom: 0px;
     left: 0px;
     //background-color: #B5CB61;
-    background-color: #85C032;
+   // background-color: #85C032;
+    background-color: #FF751A;
+    border-bottom: 5px white solid;
     color: white;
     //height: 200px;
     //border-top: 1px solid rgba(20, 20, 20, 0.8);
@@ -399,8 +448,10 @@ navbar-inverse .navbar-brand:hover, navbar-inverse .navbar-brand:focus,navbar-in
 
 .titulo{
     font-family: 'Indie Flower', cursive;
-    font-size: 35px;
-    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    padding-top: 20px;
 }
 
 

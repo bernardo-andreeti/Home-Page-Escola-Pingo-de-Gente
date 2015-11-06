@@ -14,8 +14,10 @@ and open the template in the editor.
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
         <link href="css/myStyle.css" rel="stylesheet">
 
 
@@ -31,14 +33,32 @@ and open the template in the editor.
     <body>
 
         <header class="tb-header">
+            <div class="container-fluid">
+                <div class="col-md-12" id="col_header">
 
-            <h1 class="tb-logo"><a href="index.html" >Escola Infantil Pingo de Gente</a></h1>
+                    <div class="col-md-2">
+                        <div class="tb-img"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tb-titulo"><a href="index.html" >Escola de Educação Infantil Pingo de Gente</a>
+                            <div>Aqui sua criança aprende brincando!</div></div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="tb-social">
+                            <div style="margin-top: 20px" class="wow bounceInRight" >
+                                <a href="https://www.facebook.com/educacaoinfantil.pingodegente?fref=ts"> <i class="fa fa-facebook-official fa-3x"  ></i> </a>
+                                <a href="https://www.youtube.com/?gl=BR"> <i class="fa fa-youtube-play fa-3x"  ></i> </a>
+                            </div>
+                            <address class="endereco_contato_header">
 
+                                <div class="wow swing" data-wow-duration="3s" data-wow-delay="0.5s"> <i class="fa fa-phone"></i> <strong> 054 3015-1155 </strong></div> 
+                            </address>
 
-            <ul class="tb-social">
+                        </div>
+                    </div>
 
-                <li><a href="https://www.facebook.com/educacaoinfantil.pingodegente?fref=ts" title="Link para nosso Facebook">Facebook</a></li>
-            </ul>
+                </div>
+            </div>
         </header>
 
         <nav class="navbar navbar-inverse ">
@@ -60,7 +80,7 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Início </a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="sobre.html">A escola</a></li>
                         <li class="active"><a href="galeria.html">Galeria de Fotos <span class="sr-only">(current)</span></a></li>
                         <li><a href="noticias.html">Notícias </a></li>
                         <li><a href="calendario.html">Calendário </a></li>
@@ -82,11 +102,9 @@ and open the template in the editor.
         </nav>
 
         <div class="container-fluid" id="content">    
-            <div class="row" id="row_gallery">
-                <h2 class="titulo">
-                    Nossa Galeria de Fotos!
-                </h2>
-            </div>
+            <fieldset>
+                <legend class="titulo">Nossa Galeria de Fotos!</legend>
+            </fieldset>
 
             <ul class="row" id="ul_gallery">
                 <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
